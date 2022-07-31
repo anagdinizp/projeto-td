@@ -1,0 +1,5 @@
+mutation createUsuario {
+  createUsuario(
+    data: {nome: "", email: ""}
+  )
+}
