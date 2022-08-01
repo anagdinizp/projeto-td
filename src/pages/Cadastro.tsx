@@ -2,14 +2,40 @@ import { useState } from "react";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Logo } from "../components/Logo";
+import { FormEvent } from "react";
+import { gql, useMutation } from "@apollo/client";
+
+interface criarInscrito {
+  data: {
+    nome: string
+    email: string
+  }
+}
+
+const CRIAR_INSCRITO = gql`
+  mutation createUsuario ($nome: String!, $email: String!){
+    createUsuario(data: {nome: $nome, email: $email}) {
+        id
+    }
+  }
+`
 
 export function Cadastro() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
 
+  function inscricao(event: FormEvent){
+    event.preventDefault();
+
+    function criarInscrito() {
+        const [createUsuario, {data}] = useMutation<criarInscrito>(CRIAR_INSCRITO)
+
+    }
+  }
+
   return (
-    <div className="grid grid-cols-2">
-      <div className="bg-sorriso flex flex-col justify-center items-center direct">
+    <div className="md:grid grid-cols-2">
+      <div className="hidden md:block visible bg-sorriso flex-col justify-center items-center">
         <div className="flex flex-col">
           <strong className="mt-[300px] ml-[48px] mr-[48px] mb-1 font-bold text-white text-5xl">
             Encontre o <strong className="text-yellow-500">par perfeito</strong>{" "}
@@ -22,15 +48,15 @@ export function Cadastro() {
         </div>
       </div>
 
-      <div className="bg-yellow-50 min-h-screen flex flex-col justify-center items-center direct">
+      <div className="bg-yellow-50 min-h-screen md:min-h-screen flex flex-col justify-center items-center">
         <div>
           <Logo />
         </div>
-        <div className="bg-gray-800 w-[22rem] h-[22rem] border rounded-[10px] flex flex-col justify-center items-center direct p-5">
+        <div className="bg-gray-800  w-[22rem] h-[22rem] border rounded-[10px] flex flex-col justify-center items-center direct p-5">
           <strong className="text-white text-2xl mb-6 block">
             Cadastre-se gratuitamente
           </strong>
-          <form className="flex flex-col gap-2 w-full">
+          <form className="flex flex-col gap-2 w-full" onSubmit={inscricao}>
             <Input
               styleType={{ theme: "dark", size: "s" }}
               type="text"
