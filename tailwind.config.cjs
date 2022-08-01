@@ -15,6 +15,10 @@ module.exports = {
       backgroundImage: {
         sorriso: 'url(/src/assets/background-doguinho.png)',
         doguinhos: 'url(/src/assets/background-amarelo-doguinhos.png)',
+        sorrisosm: 'url(/src/assets/background-sorriso-sm.jpg)',
+        sorrisomd: 'url(/src/assets/background-sorriso-md.jpg)',
+        sorrisolg: 'url(/src/assets/background-sorriso-lg.jpg)',
+        sorrisomdblend: 'url(/src/assets/background-sorriso-md-blend.jpg)',
       },
       fontFamily: {
         sans: 'Roboto, sans-serif',

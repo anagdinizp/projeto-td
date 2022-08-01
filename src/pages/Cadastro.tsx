@@ -35,20 +35,20 @@ export function Cadastro() {
 
   return (
     <div className="md:grid grid-cols-2">
-      <div className="hidden md:block visible bg-sorriso flex-col justify-center items-center">
+      <div className="hidden md:block visible bg-sorrisomdblend bg-cover bg-no-repeat flex-col justify-center items-center">
         <div className="flex flex-col">
-          <strong className="mt-[300px] ml-[48px] mr-[48px] mb-1 font-bold text-white text-5xl">
+          <strong className="mt-[300px] ml-[48px] mr-[48px] mb-1 font-bold text-white text-4xl">
             Encontre o <strong className="text-yellow-500">par perfeito</strong>{" "}
             para o seu <strong className="text-yellow-500">pet</strong>
           </strong>
-          <span className="ml-[48px] mr-[48px] text-yellow-500 font-bold">
+          <span className="ml-[48px] mr-[48px] text-yellow-500 font-bold text-justify">
             Com a nossa ajuda, você vai conseguir encontrar o par perfeito para
             o seu pet e os dois vão conseguir ter vários filhotes
           </span>
         </div>
       </div>
 
-      <div className="bg-yellow-50 min-h-screen md:min-h-screen flex flex-col justify-center items-center">
+      <div className="bg-yellow-50 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center">
         <div>
           <Logo />
         </div>
