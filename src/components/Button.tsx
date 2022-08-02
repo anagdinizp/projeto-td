@@ -1,11 +1,11 @@
-type colorType = "dark yellow" | "light yellow" | "black"
-type sizeType = "s" | "m" | "l"
+type colorType = "dark yellow" | "light yellow" | "black";
+type sizeType = "s" | "m" | "l";
 
 interface buttonProps {
   children: string;
   styleButton: {
-    color: colorType,
-    size: sizeType
+    color: colorType;
+    size: sizeType;
   };
 }
 
@@ -16,12 +16,12 @@ const getColor = (color: colorType) => {
     case "light yellow":
       return "bg-yellow-300 rounded font-bold text-sm text-black";
     case "black":
-      return "bg-gray-800 rounded font-bold text-sm text-white"
+      return "bg-gray-800 rounded font-bold text-sm text-white";
   }
-}
+};
 
 const getSize = (size: sizeType) => {
-  switch(size) {
+  switch (size) {
     case "s":
       return "mt-4 py-4 rounded";
     case "m":
@@ -29,12 +29,15 @@ const getSize = (size: sizeType) => {
     case "l":
       return "mt-4 py-4 rounded";
   }
-}
+};
 
-export function Button({styleButton, children}: buttonProps) {
+export function Button({ styleButton, children }: buttonProps) {
   return (
-    <button className={`${getColor(styleButton.color)}, ${getSize(styleButton.size)}`} type="submit">
+    <button
+      className={`${getColor(styleButton.color)}, ${getSize(styleButton.size)}`}
+      type="submit"
+    >
       {children}
     </button>
-  )
+  );
 }
