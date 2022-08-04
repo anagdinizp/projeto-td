@@ -1,9 +1,9 @@
-type themeType = "light" | "dark" 
-type sizeType = "s" | "m" | "l"
+type themeType = "light" | "dark";
+type sizeType = "s" | "m" | "l";
 
 interface propsInput {
   styleType: {
-    theme: themeType,
+    theme: themeType;
     size: sizeType;
   };
   type: string;
@@ -12,7 +12,7 @@ interface propsInput {
   setState: (value: string) => void;
 }
 
-const getTheme = (theme:themeType) => {
+const getTheme = (theme: themeType) => {
   switch (theme) {
     case "light":
       return "bg-white rounded";
@@ -24,13 +24,13 @@ const getTheme = (theme:themeType) => {
 const getSize = (size: sizeType) => {
   switch (size) {
     case "s":
-      return "px-5 h-14"
+      return "px-5 h-14";
     case "m":
-      return "px-10 h-28"
+      return "px-10 h-28";
     case "l":
-      return "px-20 h-40"
+      return "px-20 h-40";
   }
-}
+};
 
 export function Input({
   styleType,
@@ -49,5 +49,3 @@ export function Input({
     />
   );
 }
-
-("bg-gray-900 rounded px-5 h-14");

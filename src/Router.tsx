@@ -1,12 +1,15 @@
 import { Route, Routes } from "react-router-dom";
-import { Cadastro } from "./pages/Cadastro"
-import { Inicio } from "./pages/Inicio"
+import { Toast } from "./components/Toast";
+import { Home } from "./pages/Home";
+import { Login } from "./pages/Login";
 
 export function Router() {
   return (
-    <Routes>
-      <Route path="/" element={<Cadastro/>}/>
-      <Route path="/inicio" element={<Inicio/>}/>
-    </Routes>
-  )
+    <Toast>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/inicio" element={<Home />} />
+      </Routes>
+    </Toast>
+  );
 }
