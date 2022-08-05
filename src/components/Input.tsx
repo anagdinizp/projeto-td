@@ -26,9 +26,9 @@ interface inputPassword {
 const getTheme = (theme: themeType) => {
   switch (theme) {
     case "light":
-      return "bg-white outline-none rounded";
+      return "bg-white outline-none rounded-lg";
     case "dark":
-      return "bg-gray-900 outline-none rounded";
+      return "bg-gray-900 outline-none rounded-lg";
   }
 };
 
@@ -71,13 +71,13 @@ export function InputPassword({ value, setState, type }: inputPassword) {
   return (
     <div className="flex">
       <input
-        className="bg-gray-900 w-full p-5 h-10 rounded-l outline-none"
+        className="bg-gray-900 w-full p-5 h-10 rounded-l-lg outline-none"
         type={passwordShown ? "text" : "password"}
         placeholder={"Digite sua senha"}
         value={value}
         onChange={(event) => setState(event.target.value)}
       />
-      <div className="flex items-center justify-center rounded-r bg-gray-900 w-fit p-5 h-10 outline-none ">
+      <div className="flex items-center justify-center rounded-r-lg bg-gray-900 w-fit p-5 h-10 outline-none ">
         <i
           className="md:w-full hover:text-yellow-400 transition-colors cursor-pointer"
           onClick={passwordVisibility}

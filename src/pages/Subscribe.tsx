@@ -5,7 +5,7 @@ import { Logo } from "../components/Logo";
 
 export function Subscribe() {
   const [name, setName] = useState("");
-  const [birthDate, setBirthDate] = useState("");
+  const [age, setAge] = useState("");
   const [locale, setLocale] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,19 +14,16 @@ export function Subscribe() {
   return (
     <div className="md:grid grid-cols-2">
       <div className="hidden md:block visible bg-dogsubscriber bg-cover bg-no-repeat flex-col justify-center items-center" />
-
       <div className="bg-yellow-300 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center">
         <div>
           <Logo />
         </div>
-        <div className="bg-gray-800 w-fit h-full border rounded-[10px] flex flex-col justify-center items-center direct p-5">
-          
+        <div className="bg-gray-700 w-fit h-full rounded-lg flex flex-col justify-center items-center direct p-5">
           <strong className="text-white text-base mb-3 block">
             Crie a sua conta e encontre o{" "}
             <span className="text-yellow-500">par perfeito</span> para o seu{" "}
             <span className="text-yellow-500">pet</span>
           </strong>
-
           <form className="flex flex-col gap-2 w-full h-full">
             <strong className="text-white text-sm mb-1">Nome completo</strong>
             <Input
@@ -36,12 +33,14 @@ export function Subscribe() {
               setState={setName}
               type={"text"}
             />
-            <strong className="text-white text-sm mb-1">Data de nascimento</strong>
+            <strong className="text-white text-sm mb-1">
+              Data de nascimento
+            </strong>
             <Input
               styleType={{ theme: "dark", size: "s" }}
               placeholder="dd/mm/aa"
-              value={birthDate}
-              setState={setBirthDate}
+              value={age}
+              setState={setAge}
               type={"text"}
             />
             <strong className="text-white text-sm mb-1">Localização</strong>
@@ -74,7 +73,6 @@ export function Subscribe() {
               setState={setTelephone}
               type={"text"}
             />
-
             <Button styleButton={{ color: "dark yellow", size: "s" }}>
               Cadastrar
             </Button>

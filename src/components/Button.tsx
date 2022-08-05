@@ -23,11 +23,11 @@ const getColor = (color: colorType) => {
 const getSize = (size: sizeType) => {
   switch (size) {
     case "s":
-      return "mt-4 py-4 rounded";
+      return "mt-4 py-4 rounded-lg";
     case "m":
-      return "mt-4 py-4 rounded";
+      return "mt-4 py-4 rounded-lg";
     case "l":
-      return "mt-4 py-4 rounded";
+      return "mt-4 py-4 rounded-lg";
   }
 };
 

@@ -31,16 +31,16 @@ export function Login() {
           </span>
         </div>
       </div>
-
       <div className="bg-yellow-300 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center">
         <div>
           <Logo />
         </div>
-        <div className="bg-gray-800  w-[22rem] h-[22rem] border rounded-[10px] flex flex-col justify-center items-center direct p-5">
-          <strong className="text-white text-2xl mb-6 block">
+        <div className="bg-gray-700  w-[22rem] h-[22rem] rounded-lg flex flex-col justify-center items-center direct p-5">
+          <strong className="text-white text-2xl mb-1 block">
             Entre na sua conta
           </strong>
           <form onSubmit={enterAccount} className="flex flex-col gap-2 w-full">
+            <strong className="text-white text-sm mb-1">Email</strong>
             <Input
               styleType={{ theme: "dark", size: "s" }}
               placeholder="Digite seu email"
@@ -48,6 +48,7 @@ export function Login() {
               setState={setEmail}
               type={"email"}
             />
+            <strong className="text-white text-sm mb-1">Senha</strong>
             <InputPassword
               value={password}
               setState={setPassword}
