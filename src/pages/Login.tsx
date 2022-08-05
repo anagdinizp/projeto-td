@@ -1,19 +1,20 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/Button";
-import { Input } from "../components/Input";
+import { Input, InputPassword } from "../components/Input";
 import { Logo } from "../components/Logo";
 import { useToast } from "../components/Toast";
 
 export function Login() {
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const { showToast } = useToast();
 
-  const createSubscriber = async () => {
-    if (!!name && !!email) navigate("/inicio");
-    else showToast("Houve um problema na criação da sua conta!");
+  const enterAccount = async (event: FormEvent) => {
+    event.preventDefault;
+    if (!!password && !!email) navigate("/inicio");
+    else showToast("Houve um problema ao entrar na sua conta!", "red");
   };
 
   return (
@@ -37,33 +38,33 @@ export function Login() {
         </div>
         <div className="bg-gray-800  w-[22rem] h-[22rem] border rounded-[10px] flex flex-col justify-center items-center direct p-5">
           <strong className="text-white text-2xl mb-6 block">
-            Cadastre-se gratuitamente
+            Entre na sua conta
           </strong>
-          <form
-            onSubmit={createSubscriber}
-            className="flex flex-col gap-2 w-full"
-          >
+          <form onSubmit={enterAccount} className="flex flex-col gap-2 w-full">
             <Input
               styleType={{ theme: "dark", size: "s" }}
-              type="text"
-              placeholder="Digite seu nome completo"
-              value={name}
-              setState={setName}
-            />
-            <Input
-              styleType={{ theme: "dark", size: "s" }}
-              type="email"
               placeholder="Digite seu email"
               value={email}
               setState={setEmail}
+              type={"email"}
+            />
+            <InputPassword
+              value={password}
+              setState={setPassword}
+              type={"password"}
             />
             <Button styleButton={{ color: "dark yellow", size: "s" }}>
               Entrar
             </Button>
           </form>
-          <span className="text-sm text-white mt-4">Já é inscrito?</span>
-          <a href="/" className="font-bold mt-2 text-yellow-500">
-            Entre aqui
+          <span className="text-sm text-white mt-4">
+            Ainda não tem uma conta?
+          </span>
+          <a
+            href="/"
+            className="font-bold mt-2 text-yellow-500 hover:text-yellow-600 transition-colors"
+          >
+            Inscreva-se aqui
           </a>
         </div>
       </div>

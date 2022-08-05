@@ -12,11 +12,11 @@ interface buttonProps {
 const getColor = (color: colorType) => {
   switch (color) {
     case "dark yellow":
-      return "text-black bg-yellow-500 uppercase rounded font-bold text-sm ";
+      return "text-black bg-yellow-500 uppercase rounded font-bold text-sm hover:bg-yellow-600 transition-colors";
     case "light yellow":
-      return "bg-yellow-300 rounded font-bold text-sm text-black";
+      return "bg-yellow-300 rounded font-bold text-sm text-black hover:bg-yellow-500 transition-colors";
     case "black":
-      return "bg-gray-800 rounded font-bold text-sm text-white";
+      return "bg-gray-800 rounded font-bold text-sm text-white hover:bg-gray-500 transition-colors";
   }
 };
 

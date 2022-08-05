@@ -1,5 +1,3 @@
 export function Home() {
-  return(
-    <div>Página inicial</div>
-  )
+  return <div>Página inicial</div>;
 }
