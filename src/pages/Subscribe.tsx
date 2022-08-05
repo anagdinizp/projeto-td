@@ -13,7 +13,7 @@ export function Subscribe() {
 
   return (
     <div className="md:grid grid-cols-2">
-      <div className="hidden md:block visible bg-dogsubscribe bg-cover bg-no-repeat flex-col justify-center items-center" />
+      <div className="hidden md:block visible bg-dogsubscriber bg-cover bg-no-repeat flex-col justify-center items-center" />
 
       <div className="bg-yellow-300 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center">
         <div>

@@ -20,6 +20,7 @@ module.exports = {
         sorrisolg: 'url(/src/assets/background-sorriso-lg.jpg)',
         sorrisomdblend: 'url(/src/assets/background-sorriso-md-blend.jpg)',
         dogsubscribe: 'url(/src/assets/background-subscribe.png)',
+        dogsubscriber: 'url(/src/assets/background-dog-subscriber.png)',
       },
       fontFamily: {
         sans: 'Roboto, sans-serif',
