@@ -12,7 +12,7 @@ export function Login() {
   const { showToast } = useToast();
 
   const enterAccount = async (event: FormEvent) => {
-    event.preventDefault;
+    event.preventDefault();
     if (!!password && !!email) navigate("/inicio");
     else showToast("Houve um problema ao entrar na sua conta!", "red");
   };
@@ -61,7 +61,7 @@ export function Login() {
             Ainda não tem uma conta?
           </span>
           <a
-            href="/"
+            href="/cadastro"
             className="font-bold mt-2 text-yellow-500 hover:text-yellow-600 transition-colors"
           >
             Inscreva-se aqui

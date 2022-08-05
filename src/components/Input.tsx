@@ -4,7 +4,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 type themeType = "light" | "dark";
 type sizeType = "s" | "m" | "l";
-type inputType = "email" | "text";
+type inputType = "email" | "text" | "number";
 
 interface propsInput {
   styleType: {
@@ -26,16 +26,16 @@ interface inputPassword {
 const getTheme = (theme: themeType) => {
   switch (theme) {
     case "light":
-      return "bg-white outline-none";
+      return "bg-white outline-none rounded";
     case "dark":
-      return "bg-gray-900 outline-none";
+      return "bg-gray-900 outline-none rounded";
   }
 };
 
 const getSize = (size: sizeType) => {
   switch (size) {
     case "s":
-      return "px-9 h-14";
+      return "px-5 h-10";
     case "m":
       return "px-10 h-28";
     case "l":
@@ -64,27 +64,27 @@ export function Input({
 export function InputPassword({ value, setState, type }: inputPassword) {
   const [passwordShown, setPasswordShown] = useState(false);
   function passwordVisibility() {
-    setPasswordShown(passwordShown ? false : true);
+    setPasswordShown(!passwordShown);
   }
   const eye = <FontAwesomeIcon icon={faEye} />;
 
   return (
-    <div className="flex relative content-between">
+    <div className="flex">
       <input
-        className="bg-gray-900 px-[37px] h-14 outline-none"
+        className="bg-gray-900 w-full p-5 h-10 rounded-l outline-none"
         type={passwordShown ? "text" : "password"}
         placeholder={"Digite sua senha"}
         value={value}
         onChange={(event) => setState(event.target.value)}
       />
-      <span className="bg-gray-900 px-5 h-14 outline-none ">
+      <div className="flex items-center justify-center rounded-r bg-gray-900 w-fit p-5 h-10 outline-none ">
         <i
-          className="absolute top-[35%] right-[5%] hover:text-yellow-400 transition-colors cursor-pointer"
+          className="md:w-full hover:text-yellow-400 transition-colors cursor-pointer"
           onClick={passwordVisibility}
         >
           {eye}
         </i>
-      </span>
+      </div>
     </div>
   );
 }

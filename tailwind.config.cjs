@@ -19,6 +19,7 @@ module.exports = {
         sorrisomd: 'url(/src/assets/background-sorriso-md.jpg)',
         sorrisolg: 'url(/src/assets/background-sorriso-lg.jpg)',
         sorrisomdblend: 'url(/src/assets/background-sorriso-md-blend.jpg)',
+        dogsubscribe: 'url(/src/assets/background-subscribe.png)',
       },
       fontFamily: {
         sans: 'Roboto, sans-serif',
