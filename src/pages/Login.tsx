@@ -19,23 +19,23 @@ export function Login() {
 
   return (
     <div className="md:grid grid-cols-2">
-      <div className="hidden md:block visible bg-sorrisomdblend bg-cover bg-no-repeat flex-col justify-center items-center">
+      <div className="hidden md:flex items-center justify-center visible bg-sorrisomdblend bg-cover bg-no-repeat flex-col">
         <div className="flex flex-col">
-          <strong className="mt-[300px] ml-[48px] mr-[48px] mb-1 font-bold text-white text-4xl">
+          <strong className="mb-1 font-bold text-white text-4xl justify-center text-center">
             Encontre o <strong className="text-yellow-500">par perfeito</strong>{" "}
             para o seu <strong className="text-yellow-500">pet</strong>
           </strong>
-          <span className="ml-[48px] mr-[48px] text-yellow-500 font-bold text-justify ">
+          <span className="ml-[48px] mr-[48px] text-yellow-500 font-bold justify-center text-justify">
             Com a nossa ajuda, você vai conseguir encontrar o par perfeito para
             o seu pet e os dois vão conseguir ter vários filhotes
           </span>
         </div>
       </div>
-      <div className="bg-yellow-300 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center">
+      <div className="bg-yellow-300 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center justify-items-center">
         <div>
           <Logo />
         </div>
-        <div className="bg-gray-700  w-[22rem] h-[22rem] rounded-lg flex flex-col justify-center items-center direct p-5">
+        <div className="bg-gray-700  w-[22rem] h-fit rounded-lg flex flex-col justify-center items-center direct p-5">
           <strong className="text-white text-2xl mb-1 block">
             Entre na sua conta
           </strong>

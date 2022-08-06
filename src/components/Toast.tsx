@@ -33,15 +33,15 @@ function Toast({ children }: { children: any }) {
     switch (color) {
       case "green":
         setStyle(
-          "absolute top-5 right-5 justify-center text-center p-4 bg-green-300 text-black rounded"
+          "fixed top-5 right-5 justify-center text-center p-4 bg-green-300 text-black rounded"
         );
       case "yellow":
         setStyle(
-          "absolute top-5 right-5 justify-center text-center p-4 bg-orange-300 text-black rounded"
+          "fixed top-5 right-5 justify-center text-center p-4 bg-orange-300 text-black rounded"
         );
       case "red":
         setStyle(
-          "absolute top-5 right-5 justify-center text-center p-4 bg-red-300 text-black rounded"
+          "fixed top-5 right-5 justify-center text-center p-4 bg-red-300 text-black rounded"
         );
     }
   }
