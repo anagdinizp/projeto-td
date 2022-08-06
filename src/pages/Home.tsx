@@ -1,3 +1,5 @@
 export function Home() {
-  return <div>Página inicial</div>;
+  return (
+      <div>inicio</div>
+  )
 }
