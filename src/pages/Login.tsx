@@ -1,9 +1,11 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/Button";
 import { Input, InputPassword } from "../components/Input";
 import { Logo } from "../components/Logo";
 import { useToast } from "../components/Toast";
+import UserApi from "../services/user";
+import { authenticate } from "../authorizations/Auth";
 
 export function Login() {
   const [email, setEmail] = useState("");
@@ -13,10 +15,18 @@ export function Login() {
 
   const enterAccount = async (event: FormEvent) => {
     event.preventDefault();
-    if (!!password && !!email) navigate("/inicio");
-    else showToast("Houve um problema ao entrar na sua conta!", "red");
+    if (!!email && !!password) {
+      UserApi.login({ email, password })
+        .then((res: { data: { token: any } }) => {
+          const { token } = res.data;
+          authenticate(token);
+          navigate("/inicio");
+        })
+        .catch((error) => {
+          showToast("Houve um problema ao entrar na sua conta!", "red");
+        });
+    } else showToast("Houve um problema ao entrar na sua conta!", "red");
   };
-
   return (
     <div className="md:grid grid-cols-2">
       <div className="hidden md:flex items-center justify-center visible bg-sorrisomdblend bg-cover bg-no-repeat flex-col">

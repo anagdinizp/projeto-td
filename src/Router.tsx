@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Component, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Sidebar } from "./components/Sidebar";
 import { Toast } from "./components/Toast";
@@ -10,9 +10,9 @@ export function Router() {
   const { pathname } = useLocation();
   return (
     <Toast>
-      {["/login", "/cadastro"].includes(pathname) ? null : <Sidebar />}
+      {["/", "/cadastro"].includes(pathname) ? null : <Sidebar />}
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/inicio" element={<Home />} />
         <Route path="/cadastro" element={<Subscribe />} />
       </Routes>

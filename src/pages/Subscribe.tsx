@@ -15,13 +15,17 @@ export function Subscribe() {
   const navigate = useNavigate();
   const { showToast } = useToast();
 
+  let user = {name: name, age: age, locale: locale, email: email, password: password}
+    localStorage.setItem('user', JSON.stringify(user));
+
   const subscription = async (event: FormEvent) => {
     event.preventDefault();
+
     if (!!name && !!!age && !!locale && !!email && !!password && !!telephone)
       navigate("/inicio");
     else showToast("Tem algo errado no seu cadastro!", "red");
   };
-
+ 
   return (
     <div className="md:grid grid-cols-2">
       <div className="hidden md:block visible bg-dogsubscriber bg-cover bg-no-repeat flex-col justify-center items-center" />
