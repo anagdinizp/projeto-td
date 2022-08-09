@@ -43,7 +43,7 @@ export function Login() {
       </div>
       <div className="bg-yellow-300 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center justify-items-center">
         <div>
-          <Logo />
+          <Logo width={"120"} height={"120"} />
         </div>
         <div className="bg-gray-700  w-[22rem] h-fit rounded-lg flex flex-col justify-center items-center direct p-5">
           <strong className="text-white text-2xl mb-1 block">

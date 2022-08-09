@@ -31,7 +31,7 @@ export function Subscribe() {
       <div className="hidden md:block visible bg-dogsubscriber bg-cover bg-no-repeat flex-col justify-center items-center" />
       <div className="bg-yellow-300 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center">
         <div>
-          <Logo />
+          <Logo width={"120"} height={"120"} />
         </div>
         <div className="bg-gray-700 w-fit h-fit rounded-xl flex flex-col justify-center items-center direct p-5">
           <strong className="text-white text-base mb-3 block text-center">
