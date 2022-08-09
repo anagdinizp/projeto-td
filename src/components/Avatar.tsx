@@ -1,9 +1,14 @@
 import { Avatar } from "@material-tailwind/react";
 
-export function UserAvatar() {
+interface size{
+  width: string;
+  height: string;
+}
+
+export function UserAvatar({width, height}: size) {
   return (
     <div className="flex">
-      <Avatar className="w-10 h-10 rounded-full" src="https://avatars.githubusercontent.com/u/79330582?v=4" alt="Avatar do usuário" variant="circular"/>
+      <Avatar className="rounded-full cursor-pointer" src="https://avatars.githubusercontent.com/u/79330582?v=4" alt="Avatar do usuário" variant="circular" width={width} height={height}/>
     </div>
   )
 }

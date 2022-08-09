@@ -45,7 +45,7 @@ export function Login() {
         <div>
           <Logo width={"120"} height={"120"} />
         </div>
-        <div className="bg-gray-700  w-[22rem] h-fit rounded-lg flex flex-col justify-center items-center direct p-5">
+        <div className="bg-gray-700 w-[22rem] h-fit rounded-lg flex flex-col justify-center items-center direct p-5">
           <strong className="text-white text-2xl mb-1 block">
             Entre na sua conta
           </strong>
