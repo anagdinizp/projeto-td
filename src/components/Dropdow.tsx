@@ -1,6 +1,6 @@
 export function DropdownUser() {
   return (
-    <div className="absolute top-14 w-36 p-1 overflow-hidden bg-white rounded">
+    <div className="invisible md:visible absolute top-14 w-36 p-1 overflow-hidden bg-white rounded">
       <a
         href="/perfil"
         className="text-gray-800 text-sm h-12 flex items-center p-2 transform rounded translate-x-px"
