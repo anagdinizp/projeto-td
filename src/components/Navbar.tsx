@@ -27,8 +27,8 @@ export function Navbar({ children }: any) {
 
   return (
     <div className="flex items-center h-16 justify-around bg-yellow-100 border-b border-b-gray-800">
-      <ul className="gap-2 md:gap-8 flex items-center text-black">
-        <li className="flex items-center justify-center">
+      <ul className="gap-10 md:gap-20 flex justify-center items-center text-black">
+        <li>
           <Ancor href={"/inicio"} text={"Início"} icon={"home"} />
         </li>
         <li>

@@ -23,10 +23,10 @@ function getIcon(icon: iconType) {
 
 export function Ancor({ href, text, icon }: AType) {
   return (
-    <div>
-      <a href={href} className="flex items-center justify-center" >
-        <div className="md:relative">{getIcon(icon)}</div>
-        <span className="hidden md:text-center p-2 text-lg font-extralight">{text}</span>
+    <div className="m-auto align-middle justify-center">
+      <a href={href}>
+        <div className="inline-block">{getIcon(icon)}</div>
+        <span className="hidden md:inline-block text-center p-2 text-lg font-extralight">{text}</span>
       </a>
     </div>
   );
