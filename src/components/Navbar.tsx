@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import useBreakpoint from "../Hooks/useBreakpoints";
-import { Ancor } from "./Anchor";
+import { Anchor } from "./Anchor";
 import { UserAvatar, UserAvatarAnchor } from "./Avatar";
 import { DropdownUser } from "./Dropdow";
 
@@ -29,13 +29,13 @@ export function Navbar({ children }: any) {
     <div className="flex items-center h-16 justify-around bg-yellow-100 border-b border-b-gray-800">
       <ul className="gap-14 md:gap-20 flex justify-center items-center text-black">
         <li>
-          <Ancor href={"/inicio"} text={"Início"} icon={"home"} />
+          <Anchor href={"/inicio"} text={"Início"} icon={"home"} />
         </li>
         <li>
-          <Ancor href={"#"} text={"Meus crushs"} icon={"crushs"} />
+          <Anchor href={"#"} text={"Meus crushs"} icon={"crushs"} />
         </li>
         <li>
-          <Ancor href={"#"} text={"Pretendentes"} icon={"suitors"} />
+          <Anchor href={"#"} text={"Pretendentes"} icon={"suitors"} />
         </li>
         <li>
           {breakpoint == "xs" || breakpoint == "sm" ? (

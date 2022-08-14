@@ -21,7 +21,7 @@ function getIcon(icon: iconType) {
   }
 }
 
-export function Ancor({ href, text, icon }: AType) {
+export function Anchor({ href, text, icon }: AType) {
   return (
     <div className="m-auto align-middle justify-center">
       <a href={href}>
