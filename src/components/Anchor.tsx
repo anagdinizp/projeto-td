@@ -9,7 +9,7 @@ interface AType {
 function getIcon(icon: iconType) {
   switch (icon) {
     case "home":
-      return <img src="https://img.icons8.com/windows/35/000000/dog-house.png" />;
+      return <img src="https://img.icons8.com/external-others-pike-picture/50/000000/external-Dog-security-others-pike-picture.png"/>;
     case "suitors":
       return <img src="https://img.icons8.com/pastel-glyph/35/000000/dog-heart--v2.png" />;
     case "crushs":

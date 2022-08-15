@@ -24,21 +24,21 @@ export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
         <strong className="block mt-6 text-2xl font-bold text-center justify-items-center">
           {name}
         </strong>
-        <strong className="block pl-5 pb-2 text-black mt-2 ml-3 text-lg text-start">
+        <strong className="block pl-5 pb-1 text-black mt-2 ml-3 text-lg text-start">
           Idade:
           <span className="inline font-extralight text-black text-lg text-start">
             {" "}
             {age}
           </span>
         </strong>
-        <strong className="block pl-5 pb-2 ml-3 text-black text-lg text-start">
+        <strong className="block pl-5 pb-1 ml-3 text-black text-lg text-start">
           Raça:
           <span className=" inline text-start font-extralight text-black text-lg ">
             {" "}
             {breed}
           </span>
         </strong>
-        <strong className="block pl-5 pb-2 ml-3 text-black text-lg text-start">
+        <strong className="block pl-5 pb-1 ml-3 text-black text-lg text-start">
           Sexo:
           <span className="inline font-extralight text-black text-lg text-start">
             {" "}
