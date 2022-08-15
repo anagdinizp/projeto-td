@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { Toast } from "./components/Toast";
 import { Home } from "./pages/Home";
@@ -10,13 +11,14 @@ export function Router() {
   const { pathname } = useLocation();
   return (
     <Toast>
-      {["/", "/cadastro", "/perfil"].includes(pathname) ? null : <Navbar />}
+      {["/", "/cadastro"].includes(pathname) ? null : <Navbar />}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/inicio" element={<Home />} />
         <Route path="/cadastro" element={<Subscribe />} />
         <Route path="/perfil" element={<Profile />} />
       </Routes>
+      {["/", "/cadastro"].includes(pathname) ? null : <Footer />}
     </Toast>
   );
 }
