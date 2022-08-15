@@ -13,38 +13,49 @@ interface dataCard {
 
 export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-center items-center bg-white w-80 h-fit rounded-lg p-5 shadow-md">
-      <div className="bg-transparent"/>
-      <div className="justify-items-center">
-        <img
-          className="relative rounded-full overflow-hidden w-96 h-28"
-          src={dogImage}
-        />
-      </div>
-      <div className="flex justify-items-center flex-wrap">
-        <strong className="text-2xl font-bold text-black text-center">
+    <div className="block bg-white rounded-lg min-w-[350px] mx-4 my-4 justify-center align-middle">
+        <div className="flex text-center">
+          <img
+            className="rounded-lg m-auto mt-8 overflow-hidden w-[310px] h-[310px]"
+            src={dogImage}
+          />
+        </div>
+      <div className="block text-black pl-5 pb-5">
+        <strong className="block mt-6 text-2xl font-bold text-center justify-items-center">
           {name}
         </strong>
-        <strong className="text-black mt-2 text-sm">
-          Idade:<span className="font-extralight text-black text-sm">{age}</span>
+        <strong className="block text-black mt-2 ml-3 text-lg text-start">
+          Idade:
+          <span className="inline font-extralight text-black text-lg text-start">
+            {" "}
+            {age}
+          </span>
         </strong>
-        <strong className="text-black text-sm">
-          Raça:<span className="font-extralight text-black text-sm">{breed}</span>
+        <strong className="block ml-3 text-black text-lg text-start">
+          Raça:
+          <span className=" inline text-start font-extralight text-black text-lg ">
+            {" "}
+            {breed}
+          </span>
         </strong>
-        <strong className="text-black text-sm">
+        <strong className="block ml-3 text-black text-lg text-start">
           Sexo:
-          <span className="font-extralight text-black text-sm">{gender}</span>
+          <span className="inline font-extralight text-black text-lg text-start">
+            {" "}
+            {gender}
+          </span>
         </strong>
-        <strong className="text-black text-sm">
+        <strong className="block ml-3 text-black text-lg text-start">
           Localização:
-          <span className="font-extralight text-black text-sm">{locale}</span>
+          <span className="inline font-extralight text-black text-lg text-start">
+            {" "}
+            {locale}
+          </span>
         </strong>
       </div>
-      <div className="block bg-yellow-400 rounded-b-lg h-9 mt-48 w-72">
-        <div className="justify-center text-center">
-          <Anchor href={""} text={""} icon={"pawBlack"} />
-        </div>
-      </div>
+      <button className="block bg-yellow-500 shadow-md rounded-b-lg px-5 w-full h-12">
+        <Anchor href={""} text={""} icon={"pawBlack"} />
+      </button>
     </div>
   );
 }

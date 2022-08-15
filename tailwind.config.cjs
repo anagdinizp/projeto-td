@@ -5,6 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        'other': 'repeat(12, minmax(auto, 60px)',
+        'auto-fit': 'repeat(auto-fit, minmax(365px, 1fr))',
+        'auto-fill': 'repeat(auto-fill, minmax(365px, 1fr))',
+      },
+      gridTemplateRows: {
+        'auto-fit': 'repeat(auto-fit, minmax(22rem, 1fr))',
+        'auto-fill': 'repeat(auto-fill, minmax(22rem, 1fr))',
+      },
       screens: {
         'sm': '640px',
         'md': '768px',

@@ -15,7 +15,7 @@ function getIcon(icon: iconType) {
     case "crushs":
       return <img src="https://img.icons8.com/ios/35/000000/pet.png" />;
     case "pawBlack":
-      return <img src="https://img.icons8.com/ios/35/000000/dog-paw-print.png" />;
+      return <img src="https://img.icons8.com/ios/42/000000/dog-paw-print.png" />;
     case "pawRed":
       return <img src="https://img.icons8.com/color/35/000000/dog-paw-print.png" />
   }
