@@ -13,39 +13,39 @@ interface dataCard {
 
 export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
   return (
-    <div className="block bg-white rounded-lg min-w-[350px] mx-4 my-4 justify-center align-middle">
+    <div className="block bg-white rounded-lg w-[350px] mx-4 my-4 justify-center align-middle">
         <div className="flex text-center">
           <img
             className="rounded-lg m-auto mt-8 overflow-hidden w-[310px] h-[310px]"
             src={dogImage}
           />
         </div>
-      <div className="block text-black pl-5 pb-5">
+      <div className="block text-black">
         <strong className="block mt-6 text-2xl font-bold text-center justify-items-center">
           {name}
         </strong>
-        <strong className="block text-black mt-2 ml-3 text-lg text-start">
+        <strong className="block pl-5 pb-2 text-black mt-2 ml-3 text-lg text-start">
           Idade:
           <span className="inline font-extralight text-black text-lg text-start">
             {" "}
             {age}
           </span>
         </strong>
-        <strong className="block ml-3 text-black text-lg text-start">
+        <strong className="block pl-5 pb-2 ml-3 text-black text-lg text-start">
           Raça:
           <span className=" inline text-start font-extralight text-black text-lg ">
             {" "}
             {breed}
           </span>
         </strong>
-        <strong className="block ml-3 text-black text-lg text-start">
+        <strong className="block pl-5 pb-2 ml-3 text-black text-lg text-start">
           Sexo:
           <span className="inline font-extralight text-black text-lg text-start">
             {" "}
             {gender}
           </span>
         </strong>
-        <strong className="block ml-3 text-black text-lg text-start">
+        <strong className="block pl-5 pb-3 ml-3 text-black text-lg text-start">
           Localização:
           <span className="inline font-extralight text-black text-lg text-start">
             {" "}
