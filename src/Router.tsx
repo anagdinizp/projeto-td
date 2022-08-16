@@ -6,6 +6,7 @@ import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
 import { Subscribe } from "./pages/Subscribe";
+import { Suitors } from "./pages/Suitors";
 
 export function Router() {
   const { pathname } = useLocation();
@@ -17,6 +18,7 @@ export function Router() {
         <Route path="/inicio" element={<Home />} />
         <Route path="/cadastro" element={<Subscribe />} />
         <Route path="/perfil" element={<Profile />} />
+        <Route path="/pretendentes" element={<Suitors dogAvatar={""} dogName={""} dogAge={0} dogBreed={""} dogGender={"Macho"} locale={""} dogImages={""} ownerAvatar={""} ownerName={""} ownerAge={0} ownerCareer={""} telefone={0} message={""} />} />
       </Routes>
       {["/", "/cadastro"].includes(pathname) ? null : <Footer />}
     </Toast>

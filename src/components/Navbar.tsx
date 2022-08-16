@@ -15,7 +15,6 @@ export function Navbar({ children }: any) {
     return () => document.removeEventListener("click", handleClick);
 
     function handleClick(event: any) {
-      // event.preventDefault();
       if (ref && ref.current) {
         const myRef: any = ref.current;
         if (!myRef.contains(event.target)) {

@@ -1,5 +1,3 @@
 export function Profile() {
-  return(
-      <div>Perfil</div>
-  )
+  return <div></div>;
 }
