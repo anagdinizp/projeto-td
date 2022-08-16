@@ -17,8 +17,8 @@ export function Router() {
         <Route path="/" element={<Login />} />
         <Route path="/inicio" element={<Home />} />
         <Route path="/cadastro" element={<Subscribe />} />
-        <Route path="/perfil" element={<Profile />} />
-        <Route path="/pretendentes" element={<Suitors dogAvatar={""} dogName={""} dogAge={0} dogBreed={""} dogGender={"Macho"} locale={""} dogImages={""} ownerAvatar={""} ownerName={""} ownerAge={0} ownerCareer={""} telefone={0} message={""} />} />
+        <Route path="/perfil" element={<Profile dogAvatar={""} dogName={""} dogAge={0} dogBreed={""} dogGender={"Macho"} locale={""} dogImages={""} ownerAvatar={""} ownerName={""} ownerAge={0} ownerCareer={""} telefone={0} message={""} />} />
+        <Route path="/pretendentes" element={<Suitors suitorAvatar={""} suitorName={""} suitorAge={0} suitorBreed={""} suitorGender={"Macho"} suitorLocale={""} suitorImages={""} ownerSuitorAvatar={""} ownerSuitorName={""} ownerSuitorAge={0} ownerSuitorCareer={""} ownerSuitorTelefone={0} ownerSuitorMessage={""} />} />
       </Routes>
       {["/", "/cadastro"].includes(pathname) ? null : <Footer />}
     </Toast>
