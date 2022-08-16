@@ -39,10 +39,10 @@ export function Navbar({ children }: any) {
         </li>
         <li>
           {breakpoint == "xs" || breakpoint == "sm" ? (
-            <UserAvatarAnchor width={"44rem"} height={"14rem"} />
+            <UserAvatarAnchor image="https://avatars.githubusercontent.com/u/79330582?v=4" width={"44rem"} height={"14rem"} />
           ) : (
             <div ref={ref as any} onClick={() => setOpen(!open)}>
-              <UserAvatar width={"44rem"} height={"14rem"} />
+              <UserAvatar image="https://avatars.githubusercontent.com/u/79330582?v=4" width={"44rem"} height={"14rem"} />
               {open && <DropdownUser />}
             </div>
           )}

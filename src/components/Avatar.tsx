@@ -1,21 +1,21 @@
-interface types{
+interface avatarProps{
   width: string;
   height: string;
+  image: string;
 }
 
-export function UserAvatar({width, height}: types) {
+export function UserAvatar({width, height, image}: avatarProps) {
   return (
     <div className="flex w-fit">
-      <img className="rounded-full cursor-pointer mr-6" src="https://avatars.githubusercontent.com/u/79330582?v=4" alt="Avatar do usuário" width={width} height={height}/>
+      <img className="rounded-full cursor-pointer mr-6" src={image} alt="Avatar do usuário" width={width} height={height}/>
     </div>
   )
 }
 
-export function UserAvatarAnchor({width, height}: types) {
-  // @todo arrumar isso pra receber a imagem da galera que vai tá logado
+export function UserAvatarAnchor({width, height, image}: avatarProps) {
   return (
     <a href="/perfil" className="flex w-fit">
-      <img className="rounded-full cursor-pointer" src="https://avatars.githubusercontent.com/u/79330582?v=4" alt="Avatar do usuário" width={width} height={height}/>
+      <img className="rounded-full cursor-pointer" src={image} alt="Avatar do usuário" width={width} height={height}/>
     </a>
   )
 }
