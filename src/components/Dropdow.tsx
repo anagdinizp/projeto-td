@@ -1,7 +1,8 @@
 export function DropdownUser() {
   return (
     <div className="invisible md:visible absolute mt-2 top-14 w-36 p-1 overflow-hidden bg-white rounded">
-      <a
+      <div className="border-b border-b-gray-100">
+         <a
         href="/perfil"
         className="text-gray-800 text-sm h-12 flex items-center p-2 transform rounded translate-x-px"
       >
@@ -11,6 +12,7 @@ export function DropdownUser() {
         />
         <span className="ml-6">Perfil</span>
       </a>
+      </div>
       <a
         href="#"
         className="text-gray-800 text-sm h-12 flex items-center p-2 transform rounded translate-x-px"
