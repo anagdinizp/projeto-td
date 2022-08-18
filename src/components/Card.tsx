@@ -13,7 +13,7 @@ interface dataCard {
 
 export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
   return (
-    <div className="block bg-white rounded-lg w-[350px] mx-4 my-4 justify-center align-middle">
+    <div className="block bg-gray-100 rounded-lg w-[350px] mx-4 my-4 justify-center align-middle">
         <div className="flex text-center">
           <img
             className="rounded-lg m-auto mt-8 overflow-hidden w-[310px] h-[310px]"
@@ -53,7 +53,7 @@ export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
           </span>
         </strong>
       </div>
-      <button className="block bg-yellow-500 shadow-md rounded-b-lg px-5 w-full h-12">
+      <button className="block bg-gray-500 shadow-md rounded-b-lg px-5 w-full h-12">
         <Anchor href={""} text={""} icon={"pawBlack"} />
       </button>
     </div>
