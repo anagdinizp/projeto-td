@@ -87,7 +87,7 @@ export function ProfileMobile() {
             </strong>
           </div>
           <div className="flex justify-between">
-            <button className="mt-26 cursor-pointer">
+            <button className="mt-26 ml-5 cursor-pointer">
               <img src="https://img.icons8.com/ios/50/000000/plus-2-math.png" />
             </button>
             <div className="flex-wrap">
