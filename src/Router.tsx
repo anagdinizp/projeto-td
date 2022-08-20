@@ -20,7 +20,7 @@ export function Router() {
         <Route path="/perfil" element={<Profile />} />
         <Route path="/pretendentes" element={<Suitors suitorAvatar={""} suitorName={""} suitorAge={0} suitorBreed={""} suitorGender={"Macho"} suitorLocale={""} suitorImages={""} ownerSuitorAvatar={""} ownerSuitorName={""} ownerSuitorAge={0} ownerSuitorCareer={""} ownerSuitorTelefone={0} ownerSuitorMessage={""} />} />
       </Routes>
-      {["/", "/cadastro", "/perfil"].includes(pathname) ? null : <Footer />}
+      {["/", "/cadastro"].includes(pathname) ? null : <Footer />}
     </Toast>
   );
 }

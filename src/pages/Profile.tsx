@@ -147,7 +147,7 @@ export function Profile() {
         )}
       </div>
 
-      <div className="bg-white mt-2 rounded-lg mb-10 border-b border-b-gray-400 md:flex md:justify-between">
+      <div className="bg-white mt-2 rounded-lg mb-10 md:flex md:justify-between">
         <div className="md:ml-10 md:p-10">
           <img
             className="w-[164px] h-[162px] rounded-full m-auto mt-4 overflow-hidden md:w-[274px] md:h-[274px]"
