@@ -34,8 +34,8 @@ export function Profile() {
             <strong className="block text-black font-bold text-2xl mr-1 md:text-4xl md:mr-8">
               Louise Munik
             </strong>
-            <button className="bg-gray-200 w-28 h-10 text-white font-bold rounded-lg text-lg justify-items-center md:w-32 md:h-11 md:text-2xl">
-              Editar
+            <button className="justify-items-center">
+              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png"/>
             </button>
           </div>
           <strong className="block font-bold text-lg mt-4 md:mt-10 text-start">
@@ -77,8 +77,8 @@ export function Profile() {
             <strong className="block font-bold text-2xl text-start mr-1 md:text-4xl md:mr-8">
               Bisteca
             </strong>
-            <button className="bg-gray-200 w-28 h-10 text-white font-bold rounded-lg text-lg justify-items-center cursor-pointer md:w-32 md:h-11 md:text-2xl">
-              Editar
+            <button className="justify-items-center">
+              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png"/>
             </button>
           </div>
           <strong className="block font-bold text-lg mt-4 text-start md:mt-10">
@@ -159,8 +159,8 @@ export function Profile() {
             <strong className="block font-bold text-2xl text-start mr-1 md:text-4xl md:mr-8">
               Arleu
             </strong>
-            <button className="bg-gray-200 w-28 h-10 text-white font-bold rounded-lg text-lg justify-items-center cursor-pointer md:w-32 md:h-11 md:text-2xl">
-              Editar
+            <button className="justify-items-center">
+              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png"/>
             </button>
           </div>
           <strong className="block font-bold text-lg mt-4 text-start md:mt-10">
