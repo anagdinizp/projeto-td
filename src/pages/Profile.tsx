@@ -22,14 +22,14 @@ export function Profile() {
   const breakpoint = useBreakpoint();
   return (
     <div>
-      <div className="bg-white border-b border-b-gray-400 md:flex md:justify-items-center md:rounded-lg md:p-4">
-        <div className="m-auto md:p-10 ml-[23%]">
+      <div className="bg-white border-b border-b-gray-400 block md:flex">
+        <div className="md:p-10">
           <img
             className="w-[164px] h-[162px] rounded-full m-auto mt-4 overflow-hidden md:w-[274px] md:h-[274px]"
             src="https://images.pexels.com/photos/4076339/pexels-photo-4076339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           />
         </div>
-        <div className="block text-black font-extralight p-10 md:p-20 md:-ml-96 md:mr-[15%]">
+        <div className="block text-black font-extralight p-10 md:p-20">
           <div className="flex justify-between">
             <strong className="block text-black font-bold text-2xl mr-1 md:text-4xl md:mr-8">
               Louise Munik
