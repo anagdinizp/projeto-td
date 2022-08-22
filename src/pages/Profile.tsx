@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useBreakpoint from "../Hooks/useBreakpoints";
 
 type genderType = "Macho" | "Fêmea";
@@ -34,9 +35,9 @@ export function Profile() {
             <strong className="block text-black font-bold text-2xl mr-1 md:text-4xl md:mr-8">
               Louise Munik
             </strong>
-            <button className="justify-items-center">
+            <a href="/editar" className="justify-items-center" >
               <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png"/>
-            </button>
+            </a>
           </div>
           <strong className="block font-bold text-lg mt-4 md:mt-10 text-start">
             Idade:{" "}
@@ -196,7 +197,7 @@ export function Profile() {
             <div className="flex-wrap">
               <img
                 className="rounded-lg m-auto mt-2 mb-4 overflow-hidden w-[223px] h-[213px]"
-                src="https://images.pexels.com/photos/688694/pexels-photo-688694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/4107056/pexels-photo-4107056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               />
             </div>
             <button className="mt-26 mr-5 cursor-pointer">
@@ -211,7 +212,7 @@ export function Profile() {
             <div className="flex justify-between">
               <img
                 className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-                src="https://images.pexels.com/photos/2679682/pexels-photo-2679682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/4107056/pexels-photo-4107056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               />
               <img
                 className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
