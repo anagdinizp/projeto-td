@@ -32,16 +32,16 @@ export function Login() {
       <div className="hidden md:flex items-center justify-center visible bg-sorrisomdblend bg-cover bg-no-repeat flex-col">
         <div className="flex flex-col">
           <strong className="mb-1 font-bold text-white text-4xl justify-center text-center">
-            Encontre o <strong className="text-yellow-500">par perfeito</strong>{" "}
-            para o seu <strong className="text-yellow-500">pet</strong>
+            Encontre o <strong className="text-purple-300">par perfeito</strong>{" "}
+            para o seu <strong className="text-purple-300">pet</strong>
           </strong>
-          <span className="ml-[48px] mr-[48px] text-yellow-500 font-bold justify-center text-justify">
+          <span className="ml-[48px] mr-[48px] text-purple-300 font-bold justify-center text-justify">
             Com a nossa ajuda, você vai conseguir encontrar o par perfeito para
             o seu pet e os dois vão conseguir ter vários filhotes
           </span>
         </div>
       </div>
-      <div className="bg-yellow-300 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center justify-items-center">
+      <div className="bg-white bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center justify-items-center">
         <div>
           <Logo width={"180"} height={"180"} style={""} />
         </div>
@@ -66,7 +66,7 @@ export function Login() {
               style={"dark"}
               eyeInput={"dark"}
             />
-            <Button styleButton={{ color: "dark yellow", size: "s" }}>
+            <Button styleButton={{ color: "purple", size: "m" }}>
               Entrar
             </Button>
           </form>
@@ -75,7 +75,7 @@ export function Login() {
           </span>
           <a
             href="/cadastro"
-            className="font-bold mt-2 text-yellow-500 hover:text-yellow-600 transition-colors"
+            className="font-bold mt-2 text-purple-300 hover:text-purple-500 transition-colors"
           >
             Inscreva-se aqui
           </a>

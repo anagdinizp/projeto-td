@@ -1,4 +1,4 @@
-type colorType = "dark yellow" | "light yellow" | "black";
+type colorType = "purple" | "gray" | "black";
 type sizeType = "s" | "m" | "l";
 
 interface buttonProps {
@@ -11,10 +11,10 @@ interface buttonProps {
 
 const getColor = (color: colorType) => {
   switch (color) {
-    case "dark yellow":
-      return "flex text-black bg-yellow-500 uppercase rounded font-bold text-sm hover:bg-yellow-600 transition-colors";
-    case "light yellow":
-      return "bg-yellow-300 rounded font-bold text-sm text-black hover:bg-yellow-500 transition-colors";
+    case "purple":
+      return "text-black bg-purple-300 uppercase rounded font-bold text-sm hover:bg-yellow-600 transition-colors";
+    case "gray":
+      return "bg-grat-300 rounded font-bold text-sm text-black hover:bg-yellow-500 transition-colors";
     case "black":
       return "bg-gray-800 rounded font-bold text-lg text-white hover:bg-gray-500 transition-colors";
   }
@@ -25,7 +25,7 @@ const getSize = (size: sizeType) => {
     case "s":
       return "mt-4 py-2 w-[150px] h-[50px] rounded-lg mb-8";
     case "m":
-      return "mt-4 py-4 rounded-lg";
+      return "mt-4 py-4 w-[410px] h-[60px] rounded-lg";
     case "l":
       return "mt-4 py-4 rounded-lg";
   }
@@ -33,7 +33,7 @@ const getSize = (size: sizeType) => {
 
 export function Button({ styleButton, children }: buttonProps) {
   return (
-    <div className="flex justify-center text-center">
+    <div className="flex justify-center text-center items-center">
       <button
         className={`${getColor(styleButton.color)}, ${getSize(
           styleButton.size
