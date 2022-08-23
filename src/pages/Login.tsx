@@ -32,8 +32,8 @@ export function Login() {
       <div className="hidden md:flex items-center justify-center visible bg-sorrisomdblend bg-cover bg-no-repeat flex-col">
         <div className="flex flex-col">
           <strong className="mb-1 font-bold text-white text-4xl justify-center text-center">
-            Encontre o <strong className="text-purple-300">par perfeito</strong>{" "}
-            para o seu <strong className="text-purple-300">pet</strong>
+            Encontre o <strong className="text-purple-400">par perfeito</strong>{" "}
+            para o seu <strong className="text-purple-400">pet</strong>
           </strong>
           <span className="ml-[48px] mr-[48px] text-purple-300 font-bold justify-center text-justify">
             Com a nossa ajuda, você vai conseguir encontrar o par perfeito para
@@ -75,7 +75,7 @@ export function Login() {
           </span>
           <a
             href="/cadastro"
-            className="font-bold mt-2 text-purple-300 hover:text-purple-500 transition-colors"
+            className="font-bold mt-2 text-purple-400 hover:text-purple-500 transition-colors"
           >
             Inscreva-se aqui
           </a>

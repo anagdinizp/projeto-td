@@ -29,15 +29,15 @@ export function Subscribe() {
   return (
     <div className="md:grid grid-cols-2">
       <div className="hidden md:block visible bg-dogsubscriber bg-cover bg-no-repeat flex-col justify-center items-center" />
-      <div className="bg-yellow-300 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center">
+      <div className="bg-white bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center">
         <div>
-          <Logo width={"120"} height={"120"} style={""} />
+          <Logo width={"150"} height={"150"} style={"flex items-center justify-center"} />
         </div>
         <div className="bg-gray-700 w-fit h-fit rounded-xl flex flex-col justify-center items-center direct p-5">
           <strong className="text-white text-base mb-3 block text-center">
             Crie a sua conta e encontre o{" "}
-            <span className="text-yellow-500">par perfeito</span> para o seu{" "}
-            <span className="text-yellow-500">pet</span>
+            <span className="text-purple-400">par perfeito</span> para o seu{" "}
+            <span className="text-purple-400">pet</span>
           </strong>
           <form
             className="flex flex-col gap-2 w-full h-full"
@@ -81,8 +81,7 @@ export function Subscribe() {
             <InputPassword
               value={password}
               setState={setPassword}
-              type={"password"}
-            />
+              type={"password"} style={"dark"} eyeInput={"dark"}            />
             <strong className="text-white text-sm mb-1">Telefone</strong>
             <Input
               styleType={{ theme: "dark", size: "s" }}
@@ -91,7 +90,7 @@ export function Subscribe() {
               setState={setTelephone}
               type={"number"}
             />
-            <Button styleButton={{ color: "dark yellow", size: "s" }}>
+            <Button styleButton={{ color: "purple", size: "m" }}>
               Cadastrar
             </Button>
           </form>

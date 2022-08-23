@@ -12,7 +12,7 @@ interface buttonProps {
 const getColor = (color: colorType) => {
   switch (color) {
     case "purple":
-      return "text-black bg-purple-300 uppercase rounded font-bold text-sm hover:bg-yellow-600 transition-colors";
+      return "text-black bg-purple-400 uppercase rounded font-bold text-sm hover:bg-purple-500 transition-colors";
     case "gray":
       return "bg-grat-300 rounded font-bold text-sm text-black hover:bg-yellow-500 transition-colors";
     case "black":

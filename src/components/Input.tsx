@@ -101,7 +101,7 @@ export function InputPassword({ value, setState, type, style, eyeInput }: inputP
       />
       <div className={`${getEyeStyle(eyeInput)}`}>
         <i
-          className="md:w-full hover:text-purple-400 transition-colors cursor-pointer"
+          className="md:w-full text-purple-300 hover:text-purple-500 transition-colors cursor-pointer"
           onClick={passwordVisibility}
         >
           {eye}

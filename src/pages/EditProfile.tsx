@@ -32,7 +32,7 @@ export function EditProfile() {
           src="https://avatars.githubusercontent.com/u/79330582?v=4"
         />
         <button className="mt-2">
-          <img src="https://img.icons8.com/small/30/000000/edit-image.png" />
+          <img src="https://img.icons8.com/sf-regular/40/000000/edit-image.png" />
         </button>
       </div>
       <form

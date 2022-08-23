@@ -33,7 +33,7 @@ export function Profile() {
         <div className="block text-black font-extralight p-10 md:p-20">
           <div className="flex justify-between">
             <strong className="block text-black font-bold text-2xl mr-1 md:text-4xl md:mr-8">
-              Louise Munik
+              Ana
             </strong>
             <a href="/editar" className="justify-items-center" >
               <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png"/>
