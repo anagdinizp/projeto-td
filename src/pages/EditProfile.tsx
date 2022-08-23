@@ -25,89 +25,103 @@ export function EditProfile() {
   function saveChanges() {}
 
   return (
-    <div className="Container">
-      <div className="Avatar-container">
-        <img src="" />
-        <button className="Botão de editar imagem">
-          <img src="https://img.icons8.com/small/16/000000/edit-image.png" />
+    <div className="grid gap-2 ml-5 mr-5">
+      <div className="flex flex-col items-center">
+        <img
+          className="w-[164px] h-[162px] rounded-full m-auto mt-4 overflow-hidden md:w-[274px] md:h-[274px]"
+          src="https://avatars.githubusercontent.com/u/79330582?v=4"
+        />
+        <button className="mt-2">
+          <img src="https://img.icons8.com/small/30/000000/edit-image.png" />
         </button>
       </div>
-      <form onSubmit={saveChanges}>
-        <strong className="">Nome</strong>
+      <form
+        onSubmit={saveChanges}
+        className="flex flex-col gap-2 w-full h-full"
+      >
+        <strong className="text-black text-base mb-1 md:text-2xl">Nome</strong>
         <Input
           styleType={{
             theme: "light",
             size: "s",
           }}
-          type={"number"}
-          placeholder={""}
+          type={"text"}
+          placeholder={"Ana Gabriela"}
           value={name}
           setState={setName}
         />
-        <strong className="">Idade</strong>
+        <strong className="text-black text-base mb-1 md:text-2xl">Idade</strong>
         <Input
           styleType={{
             theme: "light",
             size: "s",
           }}
           type={"number"}
-          placeholder={""}
+          placeholder={"23 anos"}
           value={age}
           setState={setAge}
         />
-        <strong className="">Profissão</strong>
+        <strong className="text-black text-base mb-1 md:text-2xl">
+          Profissão
+        </strong>
         <Input
           styleType={{
             theme: "light",
             size: "s",
           }}
-          type={"number"}
-          placeholder={""}
+          type={"text"}
+          placeholder={"Estudante"}
           value={career}
           setState={setCareer}
         />
-        <strong className="">Contato</strong>
+        <strong className="text-black text-base mb-1 md:text-2xl">
+          Contato
+        </strong>
         <Input
           styleType={{
             theme: "light",
             size: "s",
           }}
           type={"number"}
-          placeholder={""}
+          placeholder={"83 98735-0316"}
           value={telephone}
           setState={setTelephone}
         />
-        <strong className="">Localização</strong>
+        <strong className="text-black text-base mb-1 md:text-2xl">
+          Localização
+        </strong>
         <Input
           styleType={{
             theme: "light",
             size: "s",
           }}
-          type={"number"}
-          placeholder={""}
+          type={"text"}
+          placeholder={"Campina Grande, PB"}
           value={locale}
           setState={setLocale}
         />
-        <strong className="">Email</strong>
+        <strong className="text-black text-base mb-1 md:text-2xl">Email</strong>
         <Input
           styleType={{
             theme: "light",
             size: "s",
           }}
-          type={"number"}
-          placeholder={""}
+          type={"text"}
+          placeholder={"anagabriela0399@hotmail.com"}
           value={email}
           setState={setEmail}
         />
-        <strong className="">Senha</strong>
+        <strong className="text-black text-base mb-1 md:text-2xl">Senha</strong>
         <InputPassword
           setState={setPassword}
-          type={""}
+          type={"password"}
           value={password}
+          style={"light"}
+          eyeInput={"light"}
         />
-        <Button styleButton={{ color: "black", size: "s" }}>
-          Salvar
-        </Button>
+        <div className="">
+          <Button styleButton={{ color: "black", size: "s" }}>Salvar</Button>
+        </div>
       </form>
     </div>
   );

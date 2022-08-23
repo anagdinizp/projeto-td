@@ -63,6 +63,8 @@ export function Login() {
               value={password}
               setState={setPassword}
               type={"password"}
+              style={"dark"}
+              eyeInput={"dark"}
             />
             <Button styleButton={{ color: "dark yellow", size: "s" }}>
               Entrar

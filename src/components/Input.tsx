@@ -5,6 +5,8 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 type themeType = "light" | "dark";
 type sizeType = "s" | "m" | "l";
 type inputType = "email" | "text" | "number";
+type styleInput = "dark" | "light";
+type eyeInput = "dark" | "light";
 
 interface propsInput {
   styleType: {
@@ -21,14 +23,16 @@ interface inputPassword {
   setState: (value: string) => void;
   type: string;
   value: string;
+  style: styleInput;
+  eyeInput: eyeInput;
 }
 
 const getTheme = (theme: themeType) => {
   switch (theme) {
     case "light":
-      return "bg-white outline-none rounded-lg";
+      return "bg-gray-100 outline-none rounded-lg text-base md:text-xl";
     case "dark":
-      return "bg-gray-900 outline-none rounded-lg";
+      return "bg-gray-900 outline-none rounded-lg text-base md:text-xl";
   }
 };
 
@@ -42,6 +46,24 @@ const getSize = (size: sizeType) => {
       return "px-20 h-40";
   }
 };
+
+const getStyle = (style: styleInput) => {
+  switch (style) {
+    case "light":
+      return "bg-gray-100 w-full p-5 h-8 rounded-l-lg outline-none text-base md:text-xl";
+    case "dark":
+      return "bg-gray-900 w-full p-5 h-8 rounded-l-lg outline-none text-base md:text-xl";
+  }
+};
+
+const getEyeStyle = (eyeInput:eyeInput) => {
+  switch (eyeInput) {
+    case "light":
+      return "flex items-center justify-center rounded-r-lg bg-gray-100 w-fit p-5 h-8 outline-none";
+    case "dark":
+      return "flex items-center justify-center rounded-r-lg bg-gray-900 w-fit p-5 h-8 outline-none";
+  }
+}
 
 export function Input({
   styleType,
@@ -61,7 +83,7 @@ export function Input({
   );
 }
 
-export function InputPassword({ value, setState, type }: inputPassword) {
+export function InputPassword({ value, setState, type, style, eyeInput }: inputPassword) {
   const [passwordShown, setPasswordShown] = useState(false);
   function passwordVisibility() {
     setPasswordShown(!passwordShown);
@@ -71,15 +93,15 @@ export function InputPassword({ value, setState, type }: inputPassword) {
   return (
     <div className="flex">
       <input
-        className="bg-gray-900 w-full p-5 h-10 rounded-l-lg outline-none"
+        className={`${getStyle(style)}`}
         type={passwordShown ? "text" : "password"}
         placeholder={"Digite sua senha"}
         value={value}
         onChange={(event) => setState(event.target.value)}
       />
-      <div className="flex items-center justify-center rounded-r-lg bg-gray-900 w-fit p-5 h-10 outline-none ">
+      <div className={`${getEyeStyle(eyeInput)}`}>
         <i
-          className="md:w-full hover:text-yellow-400 transition-colors cursor-pointer"
+          className="md:w-full hover:text-purple-400 transition-colors cursor-pointer"
           onClick={passwordVisibility}
         >
           {eye}

@@ -24,10 +24,10 @@ export function Profile() {
   return (
     <div>
       <div className="bg-white border-b border-b-gray-400 block md:flex">
-        <div className="md:p-10">
+        <div className="md:ml-10 md:p-10">
           <img
             className="w-[164px] h-[162px] rounded-full m-auto mt-4 overflow-hidden md:w-[274px] md:h-[274px]"
-            src="https://images.pexels.com/photos/4076339/pexels-photo-4076339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://avatars.githubusercontent.com/u/79330582?s=400&u=e88e101513b2173c42906d3fef5200e053753106&v=4"
           />
         </div>
         <div className="block text-black font-extralight p-10 md:p-20">
@@ -60,7 +60,7 @@ export function Profile() {
           <strong className="block font-bold text-lg mt-1 md:text-start">
             Contato:{" "}
             <span className="inline text-start font-extralight text-black text-lg md:font-extralight">
-              83 9 8735-0316
+              xxxxxxxxx
             </span>
           </strong>
         </div>
