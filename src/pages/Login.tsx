@@ -66,9 +66,7 @@ export function Login() {
               style={"dark"}
               eyeInput={"dark"}
             />
-            <Button styleButton={{ color: "purple", size: "m" }}>
-              Entrar
-            </Button>
+            <Button styleButton={{ color: "purple", size: "m" }}>Entrar</Button>
           </form>
           <span className="text-sm text-white mt-4">
             Ainda não tem uma conta?

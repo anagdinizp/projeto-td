@@ -35,8 +35,8 @@ export function Profile() {
             <strong className="block text-black font-bold text-2xl mr-1 md:text-4xl md:mr-8">
               Ana
             </strong>
-            <a href="/editar" className="justify-items-center" >
-              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png"/>
+            <a href="/editar" className="justify-items-center">
+              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png" />
             </a>
           </div>
           <strong className="block font-bold text-lg mt-4 md:mt-10 text-start">
@@ -79,7 +79,7 @@ export function Profile() {
               Bisteca
             </strong>
             <button className="justify-items-center">
-              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png"/>
+              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png" />
             </button>
           </div>
           <strong className="block font-bold text-lg mt-4 text-start md:mt-10">
@@ -161,7 +161,7 @@ export function Profile() {
               Arleu
             </strong>
             <button className="justify-items-center">
-              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png"/>
+              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png" />
             </button>
           </div>
           <strong className="block font-bold text-lg mt-4 text-start md:mt-10">
@@ -226,9 +226,9 @@ export function Profile() {
             <button className="mt-26 mr-5 cursor-pointer">
               <img src="https://img.icons8.com/ios/50/000000/right-squared--v1.png" />
             </button>
-          </div>)
-        }
+          </div>
+        )}
+      </div>
     </div>
-  </div>
   );
 }

@@ -56,14 +56,14 @@ const getStyle = (style: styleInput) => {
   }
 };
 
-const getEyeStyle = (eyeInput:eyeInput) => {
+const getEyeStyle = (eyeInput: eyeInput) => {
   switch (eyeInput) {
     case "light":
       return "flex items-center justify-center rounded-r-lg bg-gray-100 w-fit p-5 h-8 outline-none";
     case "dark":
       return "flex items-center justify-center rounded-r-lg bg-gray-900 w-fit p-5 h-8 outline-none";
   }
-}
+};
 
 export function Input({
   styleType,
@@ -83,7 +83,13 @@ export function Input({
   );
 }
 
-export function InputPassword({ value, setState, type, style, eyeInput }: inputPassword) {
+export function InputPassword({
+  value,
+  setState,
+  type,
+  style,
+  eyeInput,
+}: inputPassword) {
   const [passwordShown, setPasswordShown] = useState(false);
   function passwordVisibility() {
     setPasswordShown(!passwordShown);
