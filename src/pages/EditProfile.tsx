@@ -133,6 +133,12 @@ export function EditProfile() {
           </div>
         </form>
       </div>
+      <div className="flex justify-end items-center cursor-pointer">
+        <span className="text-base md:text-xl">Excluir conta</span>
+        <button>
+          <img src="https://img.icons8.com/windows/32/000000/trash.png"/>
+        </button>
+      </div>
     </div>
   );
 }
