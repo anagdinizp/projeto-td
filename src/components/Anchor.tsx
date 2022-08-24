@@ -6,14 +6,16 @@ interface AType {
   icon: iconType;
 }
 
+
+
 function getIcon(icon: iconType) {
   switch (icon) {
     case "home":
-      return <img src="https://img.icons8.com/external-others-pike-picture/50/000000/external-Dog-security-others-pike-picture.png"/>;
+      return <img src="https://img.icons8.com/ios/35/000000/dog-house.png"/>;
     case "suitors":
-      return <img src="https://img.icons8.com/pastel-glyph/35/000000/dog-heart--v2.png" />;
+      return <img src="https://img.icons8.com/ios/35/000000/year-of-dog.png"/>;
     case "crushs":
-      return <img src="https://img.icons8.com/ios/35/000000/pet.png" />;
+      return <img src="https://img.icons8.com/ios/35/000000/pet-commands-summon.png"/>;
     case "pawBlack":
       return <img src="https://img.icons8.com/ios/42/000000/dog-paw-print.png" />;
     case "pawRed":
