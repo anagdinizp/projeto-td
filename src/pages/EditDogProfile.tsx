@@ -69,7 +69,7 @@ export function DogProfile() {
               setState={setAge}
             />
             <strong className="text-black text-base mb-1 md:text-2xl">
-              Profissão
+              Raça
             </strong>
             <Input
               styleType={{
@@ -82,7 +82,7 @@ export function DogProfile() {
               setState={setBreed}
             />
             <strong className="text-black text-base mb-1 md:text-2xl">
-              Contato
+              Sexo
             </strong>
             <Input
               styleType={{
