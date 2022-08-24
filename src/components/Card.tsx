@@ -13,7 +13,7 @@ interface dataCard {
 
 export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
   return (
-    <div className="block bg-gray-100 rounded-lg w-[350px] mx-4 my-4 justify-center align-middle">
+    <div className="block bg-white-100 border border-gray-400 rounded-lg w-[350px] mx-4 my-4 justify-center align-middle">
         <div className="flex text-center">
           <img
             className="rounded-lg m-auto mt-8 overflow-hidden w-[310px] h-[310px]"

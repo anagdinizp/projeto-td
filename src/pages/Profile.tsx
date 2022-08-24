@@ -78,9 +78,9 @@ export function Profile() {
             <strong className="block font-bold text-2xl text-start mr-1 md:text-4xl md:mr-8">
               Bisteca
             </strong>
-            <button className="justify-items-center">
+            <a href="/pet" className="justify-items-center">
               <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png" />
-            </button>
+            </a>
           </div>
           <strong className="block font-bold text-lg mt-4 text-start md:mt-10">
             Idade:{" "}

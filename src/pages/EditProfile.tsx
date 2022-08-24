@@ -26,7 +26,7 @@ export function EditProfile() {
 
   return (
     <>
-      <strong className="flex justify-center font-bold text-xl p-2 md:text-2xl">Editar informações do perfil</strong>
+      <strong className="flex justify-center font-bold text-xl mt-5 p-2 md:text-2xl">Editar informações do perfil</strong>
       <div className="grid gap-2 ml-5 mr-5">
         <div className="flex flex-col items-center">
           <img
