@@ -1,4 +1,4 @@
-type colorType = "purple" | "gray" | "black";
+type colorType = "purple" | "gray" | "nude";
 type sizeType = "s" | "m" | "l";
 
 interface buttonProps {
@@ -14,9 +14,9 @@ const getColor = (color: colorType) => {
     case "purple":
       return "text-black bg-purple-400 uppercase rounded font-bold text-sm hover:bg-purple-500 transition-colors";
     case "gray":
-      return "bg-grat-300 rounded font-bold text-sm text-black hover:bg-yellow-500 transition-colors";
-    case "black":
-      return "bg-gray-800 rounded font-bold text-lg text-white hover:bg-gray-500 transition-colors";
+      return "bg-gray-300 rounded font-bold text-sm text-black hover:bg-yellow-500 transition-colors";
+    case "nude":
+      return "text-white-100 bg-white-900 rounded font-bold text-xl ";
   }
 };
 

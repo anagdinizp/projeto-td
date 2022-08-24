@@ -53,7 +53,7 @@ export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
           </span>
         </strong>
       </div>
-      <button className="block bg-gray-500 shadow-md rounded-b-lg px-5 w-full h-12">
+      <button className="block bg-white-900 shadow-md rounded-b-lg px-5 w-full h-12">
         <Anchor href={""} text={""} icon={"pawBlack"} />
       </button>
     </div>

@@ -32,7 +32,7 @@ const getTheme = (theme: themeType) => {
     case "light":
       return "bg-gray-100 outline-none rounded-lg text-base md:text-xl";
     case "dark":
-      return "bg-gray-900 outline-none rounded-lg text-base md:text-xl";
+      return "text-white-100 bg-gray-900 outline-none rounded-lg text-base md:text-xl";
   }
 };
 
@@ -52,7 +52,7 @@ const getStyle = (style: styleInput) => {
     case "light":
       return "bg-gray-100 w-full p-5 h-8 rounded-l-lg outline-none text-base md:text-xl";
     case "dark":
-      return "bg-gray-900 w-full p-5 h-8 rounded-l-lg outline-none text-base md:text-xl";
+      return "text-white-100 bg-gray-900 w-full p-5 h-8 rounded-l-lg outline-none text-base md:text-xl";
   }
 };
 
@@ -107,7 +107,7 @@ export function InputPassword({
       />
       <div className={`${getEyeStyle(eyeInput)}`}>
         <i
-          className="md:w-full text-purple-300 hover:text-purple-500 transition-colors cursor-pointer"
+          className="md:w-full text-white-900 hover:text-black transition-colors cursor-pointer"
           onClick={passwordVisibility}
         >
           {eye}

@@ -30,7 +30,7 @@ export function Profile() {
             src="https://avatars.githubusercontent.com/u/79330582?s=400&u=e88e101513b2173c42906d3fef5200e053753106&v=4"
           />
         </div>
-        <div className="block text-black font-extralight p-10 md:p-20">
+        <div className="block text-black font-extralight p-10 ml-1 md:p-20 md:-ml-16">
           <div className="flex justify-between">
             <strong className="block text-black font-bold text-2xl mr-1 md:text-4xl md:mr-8">
               Ana
@@ -108,10 +108,7 @@ export function Profile() {
           </strong>
         </div>
         {breakpoint == "xs" || breakpoint == "sm" ? (
-          <div className="flex justify-between">
-            <button className="mt-26 ml-5 cursor-pointer">
-              <img src="https://img.icons8.com/ios/50/000000/plus-2-math.png" />
-            </button>
+          <div className="flex justify-evenly">
             <div className="flex-wrap">
               <img
                 className="rounded-lg m-auto mt-2 mb-4 overflow-hidden w-[223px] h-[213px]"
@@ -124,9 +121,6 @@ export function Profile() {
           </div>
         ) : (
           <div className="flex justify-between">
-            <button className="mt-26 cursor-pointer">
-              <img src="https://img.icons8.com/ios/50/000000/plus-2-math.png" />
-            </button>
             <div className="flex justify-between">
               <img
                 className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
@@ -190,10 +184,7 @@ export function Profile() {
           </strong>
         </div>
         {breakpoint == "xs" || breakpoint == "sm" ? (
-          <div className="flex justify-between">
-            <button className="mt-26 ml-5 cursor-pointer">
-              <img src="https://img.icons8.com/ios/50/000000/plus-2-math.png" />
-            </button>
+          <div className="flex justify-evenly">
             <div className="flex-wrap">
               <img
                 className="rounded-lg m-auto mt-2 mb-4 overflow-hidden w-[223px] h-[213px]"
@@ -206,9 +197,6 @@ export function Profile() {
           </div>
         ) : (
           <div className="flex justify-between">
-            <button className="mt-26 cursor-pointer">
-              <img src="https://img.icons8.com/ios/50/000000/plus-2-math.png" />
-            </button>
             <div className="flex justify-between">
               <img
                 className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"

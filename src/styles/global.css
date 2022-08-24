@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white text-black font-sans
-}
 
 @layer utilities {
   input[type="number"]::-webkit-inner-spin-button,
