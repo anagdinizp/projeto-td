@@ -107,39 +107,25 @@ export function Profile() {
             </span>
           </strong>
         </div>
-        {breakpoint == "xs" || breakpoint == "sm" ? (
-          <div className="flex justify-evenly">
-            <div className="flex-wrap">
-              <img
-                className="rounded-lg m-auto mt-2 mb-4 overflow-hidden w-[223px] h-[213px]"
-                src="https://images.pexels.com/photos/6399509/pexels-photo-6399509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
-            </div>
-            <button className="mt-26 mr-5 cursor-pointer">
-              <img src="https://img.icons8.com/ios/50/000000/right-squared--v1.png" />
-            </button>
-          </div>
-        ) : (
+        <div className="flex justify-between">
           <div className="flex justify-between">
-            <div className="flex justify-between">
-              <img
-                className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-                src="https://images.pexels.com/photos/6399509/pexels-photo-6399509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
-              <img
-                className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-                src="https://images.pexels.com/photos/5565246/pexels-photo-5565246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
-              <img
-                className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-                src="https://images.pexels.com/photos/4994351/pexels-photo-4994351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
-            </div>
-            <button className="mt-26 mr-5 cursor-pointer">
-              <img src="https://img.icons8.com/ios/50/000000/right-squared--v1.png" />
-            </button>
+            <img
+              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
+              src="https://images.pexels.com/photos/6399509/pexels-photo-6399509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+            <img
+              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
+              src="https://images.pexels.com/photos/5565246/pexels-photo-5565246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+            <img
+              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
+              src="https://images.pexels.com/photos/4994351/pexels-photo-4994351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
           </div>
-        )}
+          <button className="mt-26 mr-5 cursor-pointer">
+            <img src="https://img.icons8.com/ios/50/000000/right-squared--v1.png" />
+          </button>
+        </div>
       </div>
 
       <div className="bg-white mt-2 rounded-lg mb-10 md:flex md:justify-between">
@@ -183,39 +169,25 @@ export function Profile() {
             </span>
           </strong>
         </div>
-        {breakpoint == "xs" || breakpoint == "sm" ? (
-          <div className="flex justify-evenly">
-            <div className="flex-wrap">
-              <img
-                className="rounded-lg m-auto mt-2 mb-4 overflow-hidden w-[223px] h-[213px]"
-                src="https://images.pexels.com/photos/4107056/pexels-photo-4107056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
-            </div>
-            <button className="mt-26 mr-5 cursor-pointer">
-              <img src="https://img.icons8.com/ios/50/000000/right-squared--v1.png" />
-            </button>
-          </div>
-        ) : (
+        <div className="flex justify-between">
           <div className="flex justify-between">
-            <div className="flex justify-between">
-              <img
-                className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-                src="https://images.pexels.com/photos/4107056/pexels-photo-4107056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
-              <img
-                className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-                src="https://images.pexels.com/photos/1139795/pexels-photo-1139795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
-              <img
-                className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-                src="https://images.pexels.com/photos/688694/pexels-photo-688694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
-            </div>
-            <button className="mt-26 mr-5 cursor-pointer">
-              <img src="https://img.icons8.com/ios/50/000000/right-squared--v1.png" />
-            </button>
+            <img
+              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
+              src="https://images.pexels.com/photos/4107056/pexels-photo-4107056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+            <img
+              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
+              src="https://images.pexels.com/photos/1139795/pexels-photo-1139795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+            <img
+              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
+              src="https://images.pexels.com/photos/688694/pexels-photo-688694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
           </div>
-        )}
+          <button className="mt-26 mr-5 cursor-pointer">
+            <img src="https://img.icons8.com/ios/50/000000/right-squared--v1.png" />
+          </button>
+        </div>
       </div>
     </div>
   );
