@@ -4,7 +4,7 @@ export function DropdownUser() {
       <div className="border-b border-b-gray-100">
          <a
         href="/perfil"
-        className="text-gray-800 text-sm h-12 flex items-center p-2 transform rounded translate-x-px"
+        className="text-gray-800 text-sm h-12 flex items-center p-2 transform rounded translate-x-px hover:bg-gray-100"
       >
         <img
           className="m-0"
@@ -15,7 +15,7 @@ export function DropdownUser() {
       </div>
       <a
         href="#"
-        className="text-gray-800 text-sm h-12 flex items-center p-2 transform rounded translate-x-px"
+        className="text-gray-800 text-sm h-12 flex items-center p-2 transform rounded translate-x-px hover:bg-gray-100"
       >
         <span className="ml-12">Sair</span>
       </a>

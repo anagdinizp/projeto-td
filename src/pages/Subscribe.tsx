@@ -15,6 +15,16 @@ export function Subscribe() {
   const navigate = useNavigate();
   const { showToast } = useToast();
 
+  const inputs = [
+    {
+      styleType: {},
+      placeholder: "",
+      value: {},
+      setState: {},
+      type: "",
+    }
+  ]
+
   let user = {
     name: name,
     age: age,
@@ -44,40 +54,9 @@ export function Subscribe() {
             className="flex flex-col gap-2 w-full h-full"
             onSubmit={subscription}
           >
-            <strong className="text-white-100 text-xl mb-1">Nome completo</strong>
-            <Input
-              styleType={{ theme: "dark", size: "s" }}
-              placeholder="Digite seu nome"
-              value={name}
-              setState={setName}
-              type={"text"}
-            />
-            <strong className="text-white-100 text-xl mb-1">
-              Data de nascimento
-            </strong>
-            <Input
-              styleType={{ theme: "dark", size: "s" }}
-              placeholder="dd/mm/aa"
-              value={age}
-              setState={setAge}
-              type={"number"}
-            />
-            <strong className="text-white-100 text-xl mb-1">Localização</strong>
-            <Input
-              styleType={{ theme: "dark", size: "s" }}
-              placeholder="Cidade, Estado"
-              value={locale}
-              setState={setLocale}
-              type={"text"}
-            />
-            <strong className="text-white-100 text-xl mb-1">Email</strong>
-            <Input
-              styleType={{ theme: "dark", size: "s" }}
-              placeholder="Digite seu email"
-              value={email}
-              setState={setEmail}
-              type={"email"}
-            />
+            {inputs.map((input) => (<></>
+            ))}
+      
             <strong className="text-white-100 text-xl mb-1">Senha</strong>
             <InputPassword
               value={password}
