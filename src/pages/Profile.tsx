@@ -1,3 +1,5 @@
+import { faUserEdit } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 type genderType = "Macho" | "Fêmea";
 
 interface profileData {
@@ -40,6 +42,7 @@ const dogs = [
 ];
 
 export function Profile() {
+  const editar = <FontAwesomeIcon icon={faUserEdit} />;
   return (
     <div>
       <div className="bg-white border-b border-b-gray-400 block md:flex">
@@ -55,7 +58,7 @@ export function Profile() {
               Ana
             </strong>
             <a href="/editar" className="justify-items-center">
-              <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png" />
+              <span className="inline-block align-middle text-2xl">{editar}</span>
             </a>
           </div>
           <strong className="block font-bold text-lg mt-4 md:mt-10 text-start">
@@ -98,7 +101,7 @@ export function Profile() {
                 {dog.name}
               </strong>
               <a href="/pet" className="justify-items-center">
-                <img src="https://img.icons8.com/fluency-systems-regular/35/000000/edit-user.png" />
+                <span className="inline-block align-middle text-2xl">{editar}</span>
               </a>
             </div>
             <strong className="block font-bold text-lg mt-4 text-start md:mt-10">

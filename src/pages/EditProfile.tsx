@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Button } from "../components/Button";
 import { Input, InputPassword } from "../components/Input";
+import { useToast } from "../components/Toast";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { faImage } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface profileData {
   name: String;
@@ -21,8 +25,14 @@ export function EditProfile() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [telephone, setTelephone] = useState("");
+  const { showToast } = useToast();
+  const lixeira = <FontAwesomeIcon icon={faTrashAlt} />;
+  const imagem = <FontAwesomeIcon icon={faImage} />;
 
-  function saveChanges() {}
+  function saveChanges(event: any) {
+    event?.preventDefault()
+    showToast("Alterações salvas", "green")
+  }
 
   return (
     <>
@@ -34,7 +44,7 @@ export function EditProfile() {
             src="https://avatars.githubusercontent.com/u/79330582?v=4"
           />
           <button className="mt-2">
-            <img src="https://img.icons8.com/sf-regular/40/000000/edit-image.png" />
+            <span className="inline-block align-middle text-2xl">{imagem}</span>
           </button>
         </div>
         <div className="flex md:w-[600px] justify-self-center">
@@ -140,7 +150,7 @@ export function EditProfile() {
         <div className="flex justify-end items-center cursor-pointer">
           <span className="text-base md:text-xl">Excluir conta</span>
           <button>
-            <img src="https://img.icons8.com/windows/32/000000/trash.png" />
+            <span className="inline-block align-middle ml-3 text-2xl">{lixeira}</span>
           </button>
         </div>
       </div>

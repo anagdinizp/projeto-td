@@ -2,12 +2,19 @@ import { useState } from "react";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { useToast } from "../components/Toast";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { faImage } from "@fortawesome/free-solid-svg-icons";
+import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const dogGallery = [
   {
-    images: "",
-  }
-]
+    image01: "",
+  },
+  {
+    image02: "",
+  },
+];
 
 interface dogData {
   name: String;
@@ -25,10 +32,13 @@ export function DogProfile() {
   const [gender, setGender] = useState("");
   const [locale, setLocale] = useState("");
   const { showToast } = useToast();
+  const lixeira = <FontAwesomeIcon icon={faTrashAlt} />;
+  const imagem = <FontAwesomeIcon icon={faImage} />;
+  const mais = <FontAwesomeIcon icon={faPlusSquare} />;
 
-  function saveChanges(event:any) {
-    event?.preventDefault()
-    showToast("Alterações salvas", "green")
+  function saveChanges(event: any) {
+    event?.preventDefault();
+    showToast("Alterações salvas", "green");
   }
 
   return (
@@ -43,7 +53,7 @@ export function DogProfile() {
             src="https://images.pexels.com/photos/4148015/pexels-photo-4148015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           />
           <button className="mt-2">
-            <img src="https://img.icons8.com/sf-regular/40/000000/edit-image.png" />
+            <span className="inline-block align-middle text-2xl">{imagem}</span>
           </button>
         </div>
         <div className="flex md:w-[600px] justify-self-center">
@@ -123,8 +133,8 @@ export function DogProfile() {
         </div>
         <div className="flex justify-end items-center cursor-pointer">
           <span className="text-base md:text-xl">Excluir pet</span>
-          <button className="ml-1 mb-1">
-            <img src="https://img.icons8.com/ios-glyphs/30/000000/pet-commands-dismiss.png" />
+          <button>
+            <span className="inline-block align-middle ml-3 text-2xl">{lixeira}</span>
           </button>
         </div>
       </div>
@@ -134,22 +144,29 @@ export function DogProfile() {
         </strong>
         <div className="flex justify-around">
           <div className="flex items-center">
-            {dogGallery.map((image) => <>
-             <div
-              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4" >
-                {image.images}
-              </div>
-              {!image.images ? <></> : <button>
-                <img src="https://img.icons8.com/sf-regular/48/000000/trash.png" />
-              </button>}
-            </>
-            )}
+            {dogGallery.map((image) => (
+              <>
+                <div className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4">
+                  {image.image01}
+                  {image.image02}
+                </div>
+                {!image.image01 && !image.image02 ? (
+                  <></>
+                ) : (
+                  <button>
+                    <span className="inline-block align-middle ml-3 text-2xl">
+                      {lixeira}
+                    </span>
+                  </button>
+                )}
+              </>
+            ))}
           </div>
         </div>
       </div>
       <div className="flex justify-center mt-5 mb-5 cursor-pointer">
         <button>
-          <img src="https://img.icons8.com/ios-filled/50/000000/plus-2-math.png" />
+          <span className="inline-block align-middle ml-3 text-3xl">{mais}</span>
         </button>
       </div>
     </>

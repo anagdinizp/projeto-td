@@ -1,5 +1,5 @@
-import { Anchor } from "./Anchor";
-
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 type genderType = "Macho" | "Fêmea";
 
 interface dataCard {
@@ -12,14 +12,15 @@ interface dataCard {
 }
 
 export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
+  const coração = <FontAwesomeIcon icon={faHeart} />;
   return (
     <div className="block bg-gray-100 rounded-lg w-[350px] mx-4 my-4 justify-center align-middle">
-        <div className="flex text-center">
-          <img
-            className="rounded-lg mx-2 mt-8 overflow-hidden w-[300px] h-[300px]"
-            src={dogImage}
-          />
-        </div>
+      <div className="flex text-center">
+        <img
+          className="rounded-lg mx-2 mt-8 overflow-hidden w-[300px] h-[300px]"
+          src={dogImage}
+        />
+      </div>
       <div className="block text-black">
         <strong className="block mt-6 text-2xl font-bold text-center justify-items-center">
           {name}
@@ -54,7 +55,7 @@ export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
         </strong>
       </div>
       <button className="block bg-white-900 shadow-md rounded-b-lg px-5 w-full h-12">
-        <Anchor href={""} text={""} icon={"pawBlack"} />
+        <span className="inline-block align-middle">{coração}</span>
       </button>
     </div>
   );
