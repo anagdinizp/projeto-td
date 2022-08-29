@@ -54,8 +54,8 @@ export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
           </span>
         </strong>
       </div>
-      <button className="block bg-white-900 shadow-md rounded-b-lg px-5 w-full h-12">
-        <span className="inline-block align-middle">{coração}</span>
+      <button className="block bg-white-900 shadow-md rounded-b-lg px-5 w-full h-12 hover:text-red-600">
+        <span className="inline-block align-middle text-2xl">{coração}</span>
       </button>
     </div>
   );
