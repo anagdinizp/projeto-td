@@ -22,8 +22,8 @@ export function Subscribe() {
       value: {},
       setState: {},
       type: "",
-    }
-  ]
+    },
+  ];
 
   let user = {
     name: name,
@@ -54,9 +54,10 @@ export function Subscribe() {
             className="flex flex-col gap-2 w-full h-full"
             onSubmit={subscription}
           >
-            {inputs.map((input) => (<></>
+            {inputs.map((input) => (
+              <></>
             ))}
-      
+
             <strong className="text-white-100 text-xl mb-1">Senha</strong>
             <InputPassword
               value={password}

@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import useBreakpoint from "../Hooks/useBreakpoints";
 import { Anchor } from "./Anchor";
 import { UserAvatar, UserAvatarAnchor } from "./Avatar";
 import { DropdownUser } from "./Dropdow";
@@ -7,7 +6,6 @@ import { DropdownUser } from "./Dropdow";
 export function Navbar({ children }: any) {
   const [open, setOpen] = useState(false);
   const ref = useRef();
-  const breakpoint = useBreakpoint();
 
   useEffect(() => {
     document.addEventListener("click", handleClick);
@@ -37,14 +35,11 @@ export function Navbar({ children }: any) {
           <Anchor href={"#"} text={"Pretendentes"} icon={"suitors"} />
         </li>
         <li>
-          {breakpoint == "xs" || breakpoint == "sm" ? (
-            <UserAvatarAnchor image="https://avatars.githubusercontent.com/u/79330582?v=4" width={"44rem"} height={"14rem"} />
-          ) : (
-            <div ref={ref as any} onClick={() => setOpen(!open)}>
-              <UserAvatar image="https://avatars.githubusercontent.com/u/79330582?v=4" width={"44rem"} height={"14rem"} />
-              {open && <DropdownUser />}
-            </div>
-          )}
+          <UserAvatarAnchor
+            image="https://avatars.githubusercontent.com/u/79330582?v=4"
+            width={"44rem"}
+            height={"14rem"}
+          />
         </li>
       </ul>
     </div>
