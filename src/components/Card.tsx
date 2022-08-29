@@ -15,7 +15,7 @@ export function Card({ name, age, gender, breed, locale, dogImage }: dataCard) {
   const coração = <FontAwesomeIcon icon={faHeart} />;
   return (
     <div className="block bg-gray-100 rounded-lg w-[350px] mx-4 my-4 justify-center align-middle">
-      <div className="flex text-center">
+      <div className="flex text-center justify-center">
         <img
           className="rounded-lg mx-2 mt-8 overflow-hidden w-[300px] h-[300px]"
           src={dogImage}

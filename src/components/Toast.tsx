@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from "react";
 
-type colorType = "green" | "yellow" | "red";
+type colorType = "green" | "yellow" | "red" | "nude";
 
 interface toastType {
   color: colorType;
@@ -31,18 +31,24 @@ function Toast({ children }: { children: any }) {
 
   function getColor(color: colorType) {
     switch (color) {
-      case "green":
+      case "red": {
+        setStyle(
+          "bg-red-300 fixed top-5 right-5 justify-center text-center p-4 text-black rounded"
+        );
+        break;
+      }
+      case "green": {
         setStyle(
           "bg-green-300 fixed top-5 right-5 justify-center text-center p-4 text-black rounded"
         );
-      case "yellow":
+        break;
+      }
+      case "yellow": {
         setStyle(
-          "bg-orange-300 fixed top-5 right-5 justify-center text-center p-4  text-black rounded"
+          "bg-orange-300 fixed top-5 right-5 justify-center text-center p-4 text-black rounded"
         );
-      case "red":
-        setStyle(
-          "bg-red-300 fixed top-5 right-5 justify-center text-center p-4  text-black rounded"
-        );
+        break;
+      } 
     }
   }
 
