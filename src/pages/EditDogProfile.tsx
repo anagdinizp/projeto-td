@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
+import { useToast } from "../components/Toast";
 
 const dogGallery = [
   {
@@ -23,8 +24,12 @@ export function DogProfile() {
   const [breed, setBreed] = useState("");
   const [gender, setGender] = useState("");
   const [locale, setLocale] = useState("");
+  const { showToast } = useToast();
 
-  function saveChanges() {}
+  function saveChanges(event:any) {
+    event?.preventDefault()
+    showToast("Alterações salvas", "green")
+  }
 
   return (
     <>

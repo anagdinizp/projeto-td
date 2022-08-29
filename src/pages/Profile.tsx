@@ -26,9 +26,6 @@ const dogs = [
     dogAvatar:
       "https://images.pexels.com/photos/1139794/pexels-photo-1139794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     gallery: "",
-    //image01:"https://images.pexels.com/photos/1975516/pexels-photo-1975516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    //image02:"https://images.pexels.com/photos/3104708/pexels-photo-3104708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    //image03:"https://images.pexels.com/photos/895259/pexels-photo-895259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     name: "Arleu",
@@ -39,10 +36,7 @@ const dogs = [
     dogAvatar:
       "https://images.pexels.com/photos/4148015/pexels-photo-4148015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     gallery: "",
-    //image01: "https://images.pexels.com/photos/4148012/pexels-photo-4148012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    //image02: "https://images.pexels.com/photos/4884404/pexels-photo-4884404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    //image03: "https://images.pexels.com/photos/6399508/pexels-photo-6399508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
+  }
 ];
 
 export function Profile() {
