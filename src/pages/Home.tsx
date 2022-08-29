@@ -36,8 +36,8 @@ export function Home() {
           />
         ))}
       </div>
-      <button className="flex m-auto justify-center text-center cursor-pointer">
-        <img src="https://img.icons8.com/pastel-glyph/64/000000/loop.png" />
+      <button className="flex m-auto justify-center text-center cursor-pointer mb-6">
+        <img src="https://img.icons8.com/pastel-glyph/40/000000/loop.png" />
       </button>
     </div>
   );

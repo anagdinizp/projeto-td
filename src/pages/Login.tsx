@@ -40,34 +40,34 @@ export function Login() {
           </span>
         </div>
       </div>
-      <div className="bg-white bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center justify-items-center">
+      <div className="bg-white  bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center justify-items-center">
         <div>
-          <Logo width={"180"} height={"180"} style={""} />
+          <Logo width={"180"} height={"180"} style={"flex items-center justify-center ml-6 -mt-6"} />
         </div>
-        <div className="bg-gray-700 w-[22rem] h-fit rounded-lg flex flex-col justify-center items-center direct p-5">
-          <strong className="text-white-100 text-2xl mb-1 block">
+        <div className="bg-white-100 w-[22rem] h-fit rounded-lg flex flex-col justify-center items-center direct p-5">
+          <strong className="text-black text-2xl mb-6 block">
             Entre na sua conta
           </strong>
           <form onSubmit={enterAccount} className="flex flex-col gap-2 w-full">
-            <strong className="text-white-100 text-base mb-1">Email</strong>
+            <strong className="text-black text-xl mb-1">Email</strong>
             <Input
-              styleType={{ theme: "dark", size: "s" }}
+              styleType={{ theme: "light", size: "s" }}
               placeholder="Digite seu email"
               value={email}
               setState={setEmail}
               type={"email"}
             />
-            <strong className="text-white-100 text-base mb-1">Senha</strong>
+            <strong className="text-black text-xl mb-1">Senha</strong>
             <InputPassword
               value={password}
               setState={setPassword}
               type={"password"}
-              style={"dark"}
-              eyeInput={"dark"}
+              style={"light"}
+              eyeInput={"light"}
             />
             <Button styleButton={{ color: "nude", size: "m" }}>Entrar</Button>
           </form>
-          <span className="text-base text-white-100 mt-4">
+          <span className="text-base text-black mt-4">
             Ainda não tem uma conta?
           </span>
           <a

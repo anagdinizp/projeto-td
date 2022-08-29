@@ -2,6 +2,12 @@ import { useState } from "react";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 
+const dogGallery = [
+  {
+    images: "",
+  }
+]
+
 interface dogData {
   name: String;
   age: Number;
@@ -123,40 +129,16 @@ export function DogProfile() {
         </strong>
         <div className="flex justify-around">
           <div className="flex items-center">
-            <img
-              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-              src="https://images.pexels.com/photos/6399509/pexels-photo-6399509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            />
-            <button className="">
-              <img src="https://img.icons8.com/sf-regular/48/000000/trash.png" />
-            </button>
-          </div>
-          <div className="flex items-center">
-            <img
-              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-              src="https://images.pexels.com/photos/5565246/pexels-photo-5565246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            />
-            <button className="">
-              <img src="https://img.icons8.com/sf-regular/48/000000/trash.png" />
-            </button>
-          </div>
-          <div className="flex items-center">
-            <img
-              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-              src="https://images.pexels.com/photos/4994351/pexels-photo-4994351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            />
-            <button className="">
-              <img src="https://img.icons8.com/sf-regular/48/000000/trash.png" />
-            </button>
-          </div>
-          <div className="flex items-center">
-            <img
-              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4"
-              src="https://images.pexels.com/photos/6399508/pexels-photo-6399508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            />
-            <button className="">
-              <img src="https://img.icons8.com/sf-regular/48/000000/trash.png" />
-            </button>
+            {dogGallery.map((image) => <>
+             <div
+              className="w-[326px] h-[340px] rounded-3xl mr-1 mt-3 p-4" >
+                {image.images}
+              </div>
+              {!image.images ? <></> : <button>
+                <img src="https://img.icons8.com/sf-regular/48/000000/trash.png" />
+              </button>}
+            </>
+            )}
           </div>
         </div>
       </div>
