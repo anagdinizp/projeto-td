@@ -36,7 +36,6 @@ export function Subscribe() {
     <div className="md:grid grid-cols-2">
       <div className="hidden md:block visible bg-dogsubscriber bg-cover bg-no-repeat flex-col justify-center items-center" />
       <div className="bg-white-100 bg-cover min-h-screen md:min-h-screen flex flex-col justify-center items-center">
-        <Logo width={"180"} height={"180"} style={"flex items-center justify-center ml-16 -mb-4 md:ml-6 md:mt-6"} />
         <div className="bg-white-100 m-auto w-fit h-fit rounded-xl flex flex-col justify-center items-center">
           <strong className="text-black text-3xl mb-4 block text-center">
             Crie a sua conta
