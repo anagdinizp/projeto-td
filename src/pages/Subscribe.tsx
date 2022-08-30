@@ -2,7 +2,6 @@ import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/Button";
 import { Input, InputPassword } from "../components/Input";
-import { Logo } from "../components/Logo";
 import { useToast } from "../components/Toast";
 
 export function Subscribe() {
@@ -27,7 +26,7 @@ export function Subscribe() {
   const subscription = async (event: FormEvent) => {
     event.preventDefault();
 
-    if (!!name && !!!age && !!locale && !!email && !!password && !!telephone)
+    if (!!name && !!age && !!locale && !!email && !!password && !!telephone)
       navigate("/inicio");
     else showToast("Tem algo errado no seu cadastro!", "red");
   };

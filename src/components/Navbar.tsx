@@ -56,7 +56,7 @@ export function Navbar({ children }: any) {
         </li>
         <li>
           <UserAvatarAnchor
-            image="https://avatars.githubusercontent.com/u/79330582?v=4"
+            image="https://pbs.twimg.com/profile_images/1562216319918931968/Unr7rsbO_400x400.jpg"
             width={"44rem"}
             height={"14rem"}
           />

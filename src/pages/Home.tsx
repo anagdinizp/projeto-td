@@ -1,27 +1,30 @@
 import { Card } from "../components/Card";
+import { faRepeat } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const cards = [
   {
     name: "Simba",
-    age: 2,
+    age: 4,
     gender: "Macho",
-    breed: "Poodle",
+    breed: "Dachshund",
     locale: "Campina Grande, PB",
     dogAvatar:
-      "https://images.pexels.com/photos/1139794/pexels-photo-1139794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/1139794/pexels-photo-1139794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    name: "Arleu",
-    age: 3,
+    name: "Bisteca",
+    age: 2,
     breed: "Dachshund",
     gender: "Macho",
-    locale: "João Pessoa, PB",
+    locale: "Campina Grande, PB",
     dogAvatar:
-      "https://images.pexels.com/photos/4148015/pexels-photo-4148015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/4148015/pexels-photo-4148015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
 
 export function Home() {
+  const repetir = <FontAwesomeIcon icon={faRepeat} />;
   return (
     <div>
       <div className="flex flex-wrap p-8 justify-center items-center">
@@ -32,12 +35,12 @@ export function Home() {
             gender={card.gender}
             breed={card.breed}
             locale={card.locale}
-            dogImage={card.locale}
+            dogImage={card.dogAvatar}
           />
         ))}
       </div>
       <button className="flex m-auto justify-center text-center cursor-pointer mb-6">
-        <img src="https://img.icons8.com/pastel-glyph/40/000000/loop.png" />
+        <span className="inline-block align-middle text-2xl">{repetir}</span>
       </button>
     </div>
   );

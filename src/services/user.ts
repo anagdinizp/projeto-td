@@ -7,12 +7,14 @@ export default {
   login: async (payload: {
     email: string;
     password: string;
-  }): Promise<{ data: {token: string; id: string; name: string }}> =>
-    Promise.resolve({
+  }): Promise<{data: {token:string; id: string; name:string;}}> => {
+    localStorage.setItem("token", "tokenzao");
+    return Promise.resolve({
       data: {
         token: "tokenzao",
         id: "123",
-        name: "Jubileu",
-      },
-    }),
-};
+        name: "Ana",
+      }
+    })
+  }
+}

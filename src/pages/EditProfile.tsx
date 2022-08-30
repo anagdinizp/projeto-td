@@ -41,7 +41,7 @@ export function EditProfile() {
         <div className="flex flex-col items-center">
           <img
             className="w-[164px] h-[162px] rounded-full m-auto mt-4 overflow-hidden"
-            src="https://avatars.githubusercontent.com/u/79330582?v=4"
+            src="https://pbs.twimg.com/profile_images/1562216319918931968/Unr7rsbO_400x400.jpg"
           />
           <button className="mt-2">
             <span className="inline-block align-middle text-2xl">{imagem}</span>

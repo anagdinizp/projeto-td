@@ -10,8 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const dogGallery = [
   {
     image01: "",
-  },
-  {
     image02: "",
   },
 ];
@@ -50,7 +48,7 @@ export function DogProfile() {
         <div className="flex flex-col items-center">
           <img
             className="w-[164px] h-[162px] rounded-full m-auto mt-4 overflow-hidden"
-            src="https://images.pexels.com/photos/4148015/pexels-photo-4148015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://images.pexels.com/photos/1139794/pexels-photo-1139794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           />
           <button className="mt-2">
             <span className="inline-block align-middle text-2xl">{imagem}</span>
@@ -70,7 +68,7 @@ export function DogProfile() {
                 size: "s",
               }}
               type={"text"}
-              placeholder={"Bisteca"}
+              placeholder={"Simba"}
               value={name}
               setState={setName}
             />
@@ -83,7 +81,7 @@ export function DogProfile() {
                 size: "s",
               }}
               type={"number"}
-              placeholder={"2 anos"}
+              placeholder={"4 anos"}
               value={age}
               setState={setAge}
             />
@@ -134,7 +132,9 @@ export function DogProfile() {
         <div className="flex justify-end items-center cursor-pointer">
           <span className="text-base md:text-xl">Excluir pet</span>
           <button>
-            <span className="inline-block align-middle ml-3 text-2xl">{lixeira}</span>
+            <span className="inline-block align-middle ml-3 text-2xl">
+              {lixeira}
+            </span>
           </button>
         </div>
       </div>
@@ -166,7 +166,9 @@ export function DogProfile() {
       </div>
       <div className="flex justify-center mt-5 mb-5 cursor-pointer">
         <button>
-          <span className="inline-block align-middle ml-3 text-3xl">{mais}</span>
+          <span className="inline-block align-middle ml-3 text-3xl">
+            {mais}
+          </span>
         </button>
       </div>
     </>
